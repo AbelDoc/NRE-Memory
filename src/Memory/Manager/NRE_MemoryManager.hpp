@@ -13,6 +13,8 @@
     #include <Utility/Singleton/NRE_Singleton.hpp>
     #include <Utility/Detail/Vector/NRE_Vector.hpp>
     #include "../Allocator/NRE_DirectAllocator.hpp"
+
+    #include "Data/NRE_Memory.hpp"
     
     /**
      * @namespace NRE
@@ -24,7 +26,7 @@
          * @brief Memory's API
          */
         namespace Memory {
-            
+
             /**
              * @class MemoryManager
              * @brief Store current allocated memory and tell if any memory leak occurs
@@ -32,7 +34,7 @@
             class MemoryManager  : public Utility::Singleton<MemoryManager> {
                 friend class Singleton<MemoryManager>;
                 private:    // Fields
-                    Utility::Detail::Vector<void*, DirectAllocator<void*>> allocated;   /**< Store all allocated pointer */
+                    Utility::Detail::Vector<MemoryHelper*, DirectAllocator<MemoryHelper*>> allocated;   /**< Store all allocated pointer */
         
                 public :    // Methods
                     /**
@@ -41,7 +43,8 @@
                      */
                     template <class T>
                     void storeMemory(T* data) {
-                        allocated.emplaceBack(data);
+                        DirectAllocator<Memory<T>> alloc;
+                        allocated.emplaceBack(alloc.construct(alloc.allocate(1), data));
                     }
                     /**
                      * Remove a memory pointer
@@ -49,7 +52,17 @@
                      */
                     template <class T>
                     void removeMemory(T* data) {
-                        allocated.erase(std::remove(allocated.begin(), allocated.end(), data), allocated.end());
+                        MemoryHelper* toRemove = nullptr;
+                        for (MemoryHelper* mem : allocated) {
+                            if (mem->getData() == data) {
+                                toRemove = mem;
+                                break;
+                            }
+                        }
+                        assert(toRemove != nullptr);
+                        
+                        allocated.erase(std::remove(allocated.begin(), allocated.end(), toRemove), allocated.end());
+                        delete toRemove;
                     }
         
                 private:   // Methods
@@ -64,9 +77,11 @@
                      * MemoryManager Deconstructor
                      */
                     ~MemoryManager() {
-                        for (void* p : allocated) {
-                            std::cout << "Memory at : " << p << " has not been freed !" << std::endl;
-                            std::cout << "Deallocating now, but can't call deconstructor !" << std::endl;
+                        for (MemoryHelper* p : allocated) {
+                            std::cout << "Memory at : " << p->getData() << " has not been freed !" << std::endl;
+                            p->free();
+                            
+                            p->~MemoryHelper();
                             free(p);
                         }
                     }
@@ -76,7 +91,12 @@
     }
 
     #ifdef NRE_USE_MEMORY_MANAGER
-        void* operator new(std::size_t size) {
+        /**
+         * Allocate a given number of bytes
+         * @param size the number of bytes to allocate
+         * @return     a pointer on the first allocated byte
+         */
+        [[nodiscard]] void* operator new(std::size_t size) {
             void* data = malloc(size);
             if (!data) {
                 throw std::bad_alloc();
@@ -84,14 +104,22 @@
             NRE::Utility::Singleton<NRE::Memory::MemoryManager>::get().storeMemory(data);
             return data;
         }
-        
-        void operator delete(void* p) {
+        /**
+         * Delete a raw pointer
+         * @param p the pointer to free
+         */
+        void operator delete(void* p) noexcept {
             NRE::Utility::Singleton<NRE::Memory::MemoryManager>::get().removeMemory(p);
             free(p);
             p = nullptr;
         }
-        
-        void operator delete(void* p, std::size_t) {
+        /**
+         * Delete a raw pointer
+         * @param p the pointer to free
+         * @param n the allocated size
+         */
+        void operator delete(void* p, std::size_t n) noexcept {
+            (void)n;
             NRE::Utility::Singleton<NRE::Memory::MemoryManager>::get().removeMemory(p);
             free(p);
             p = nullptr;

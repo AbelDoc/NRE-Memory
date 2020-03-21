@@ -9,9 +9,7 @@
      
     #define NRE_USE_MEMORY_MANAGER
 
-    #include <iostream>
     #include "Header/NRE_Memory.hpp"
-    #include "Header/NRE_Utility.hpp"
 
     using namespace NRE::Memory;
     using namespace NRE::Utility;
@@ -27,6 +25,10 @@
         
         a.destroy(p);
         //a.deallocate(p);
+        
+        int* q = new int(4321);
+        
+        std::cout << *q << std::endl;
         
         return 0;
     }

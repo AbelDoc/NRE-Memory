@@ -6,6 +6,8 @@
      * @date 14/03/2020
      * @copyright CC-BY-NC-SA
      */
+     
+    #define NRE_USE_MEMORY_MANAGER
 
     #include <iostream>
     #include "Header/NRE_Memory.hpp"
@@ -14,62 +16,6 @@
     using namespace NRE::Memory;
     using namespace NRE::Utility;
     
-    class MemoryManager  : public Singleton<MemoryManager> {
-        friend class Singleton<MemoryManager>;
-        
-        private:    // Fields
-            Vector<void*, DirectAllocator<void*>> allocated;   /**< Store all allocated pointer */
-            
-        public :    // Methods
-            void storeMemory(void* data) {
-                allocated.emplaceBack(data);
-            }
-            void removeMemory(void* data) {
-                allocated.erase(std::remove(allocated.begin(), allocated.end(), data), allocated.end());
-            }
-
-        private:   // Methods
-            //## Constructor ##//
-                /**
-                 * Default constructor
-                 */
-                MemoryManager() = default;
-        
-            //## Deconstructor ##//
-                /**
-                 * MemoryManager Deconstructor
-                 */
-                ~MemoryManager() {
-                    for (void* p : allocated) {
-                        std::cout << "Memory at : " << p << " has not been freed !" << std::endl;
-                        //std::cout << "Deallocating now, but can't call deconstructor !" << std::endl;
-                        //delete p;
-                    }
-                }
-    };
-    
-    
-    void* operator new(std::size_t size) {
-        std::cout << "New" << std::endl;
-        void* data = malloc(size);
-        if (!data) {
-            throw std::bad_alloc();
-        }
-        Singleton<MemoryManager>::get().storeMemory(data);
-        return data;
-    }
-    
-    void operator delete(void* p) {
-        std::cout << "Delete" << std::endl;
-        Singleton<MemoryManager>::get().removeMemory(p);
-        free(p);
-    }
-    
-    void operator delete(void* p, std::size_t) {
-        std::cout << "Delete" << std::endl;
-        Singleton<MemoryManager>::get().removeMemory(p);
-        free(p);
-    }
     
     int main(int, char**) {
         Allocator<int> a;
@@ -80,7 +26,7 @@
         std::cout << *p << std::endl;
         
         a.destroy(p);
-        //a.deallocate(p, 1);
+        //a.deallocate(p);
         
         return 0;
     }

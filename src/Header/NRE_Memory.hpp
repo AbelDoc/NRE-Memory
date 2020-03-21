@@ -9,6 +9,5 @@
     
     #pragma once
     
-    #include "../Memory/NRE_IAllocator.hpp"
-    #include "../Memory/NRE_Allocator.hpp"
-    #include "../Memory/NRE_DirectAllocator.hpp"
+    #include "../Memory/Allocator/NRE_Allocator.hpp"
+    #include "../Memory/Manager/NRE_MemoryManager.hpp"

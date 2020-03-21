@@ -1,6 +1,6 @@
     
     /**
-     * @file NRE_Allocator.hpp
+     * @file NRE_DirectAllocator.hpp
      * @brief Declaration of Memory's API's Object : DirectAllocator
      * @author Louis ABEL
      * @date 21/03/2020
@@ -63,7 +63,7 @@
                         return std::addressof(object);
                     }
                     /**
-                     * Allocate n * sizeof(T) bytes by calling global new operator
+                     * Allocate n * sizeof(T) bytes
                      * @param n the number of object
                      * @return  a pointer on the first allocated bytes
                      */
@@ -78,7 +78,7 @@
                      * Deallocate a pointer given by an allocate call
                      * @param p the pointer on the first bytes allocated
                      */
-                    void deallocate(T* p) {
+                    void deallocate(T*& p) {
                         free(p);
                         p = nullptr;
                     }
@@ -87,7 +87,7 @@
                      * @param p the pointer on the first bytes allocated
                      * @param n the number of object allocated
                      */
-                    void deallocate(T* p, std::size_t n) {
+                    void deallocate(T*& p, std::size_t n) {
                         (void)n;
                         free(p);
                         p = nullptr;

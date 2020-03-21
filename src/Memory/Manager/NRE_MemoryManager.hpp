@@ -115,7 +115,6 @@
         void operator delete(void* p) noexcept {
             NRE::Utility::Singleton<NRE::Memory::MemoryManager>::get().removeMemory(p);
             free(p);
-            p = nullptr;
         }
         /**
          * Delete a raw pointer
@@ -126,6 +125,5 @@
             (void)n;
             NRE::Utility::Singleton<NRE::Memory::MemoryManager>::get().removeMemory(p);
             free(p);
-            p = nullptr;
         }
     #endif

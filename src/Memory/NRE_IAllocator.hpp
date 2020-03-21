@@ -66,6 +66,13 @@
                     /**
                      * Deallocate a pointer given by an allocate call
                      * @param p the pointer on the first bytes allocated
+                     */
+                    void deallocate(T* p) {
+                        this->impl().deallocate(p);
+                    }
+                    /**
+                     * Deallocate a pointer given by an allocate call
+                     * @param p the pointer on the first bytes allocated
                      * @param n the number of object allocated
                      */
                     void deallocate(T* p, std::size_t n) {
@@ -77,7 +84,7 @@
                      * @param args the construction arguments
                      */
                     template <class K, class ... Args>
-                    void construct(K* p, Args && ... args) {
+                    K* construct(K* p, Args && ... args) {
                         return this->impl().construct(p, std::forward<Args>(args)...);
                     }
                     /**

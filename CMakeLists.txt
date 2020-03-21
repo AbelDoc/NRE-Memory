@@ -6,6 +6,10 @@ set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pedantic -Wno-virtual-move-assign -Wal
 
 include_directories(C:/Users/abell/Documents/GitHub/NRE-Utility/src)
 
+include_directories(src)
+include_directories(src/Header)
+include_directories(src/Memory)
+
 set(COMPILE_LIST)
 
 set(EXEC_LIST

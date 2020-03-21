@@ -18,7 +18,7 @@
         friend class Singleton<MemoryManager>;
         
         private:    // Fields
-            Vector<void*> allocated;   /**< Store all allocated pointer */
+            Vector<void*, DirectAllocator<void*>> allocated;   /**< Store all allocated pointer */
             
         public :    // Methods
             void storeMemory(void* data) {
@@ -52,6 +52,9 @@
     void* operator new(std::size_t size) {
         std::cout << "New" << std::endl;
         void* data = malloc(size);
+        if (!data) {
+            throw std::bad_alloc();
+        }
         Singleton<MemoryManager>::get().storeMemory(data);
         return data;
     }
@@ -69,7 +72,7 @@
     }
     
     int main(int, char**) {
-        DirectAllocator<int> a;
+        Allocator<int> a;
         
         auto p = a.allocate(1);
         a.construct(p, 1234);
@@ -77,7 +80,7 @@
         std::cout << *p << std::endl;
         
         a.destroy(p);
-        a.deallocate(p, 1);
+        //a.deallocate(p, 1);
         
         return 0;
     }

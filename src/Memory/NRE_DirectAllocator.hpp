@@ -68,7 +68,19 @@
                      * @return  a pointer on the first allocated bytes
                      */
                     [[nodiscard]] T* allocate(std::size_t n) {
-                        return static_cast <T*> (malloc(n * sizeof(T)));
+                        T* data = static_cast <T*> (malloc(n * sizeof(T)));
+                        if (!data) {
+                            throw std::bad_alloc();
+                        }
+                        return data;
+                    }
+                    /**
+                     * Deallocate a pointer given by an allocate call
+                     * @param p the pointer on the first bytes allocated
+                     */
+                    void deallocate(T* p) {
+                        free(p);
+                        p = nullptr;
                     }
                     /**
                      * Deallocate a pointer given by an allocate call
@@ -86,9 +98,9 @@
                      * @param args the construction arguments
                      */
                     template <class K, class ... Args>
-                    void construct(K* p, Args && ... args) {
+                    K* construct(K* p, Args && ... args) {
                         assert(p != nullptr);
-                        ::new(static_cast <void*> (p)) K(std::forward<Args>(args)...);
+                        return static_cast <K*> (::new(static_cast <void*> (p)) K(std::forward<Args>(args)...));
                     }
                     /**
                      * Destroy an given to the given pointer

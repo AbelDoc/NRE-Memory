@@ -73,6 +73,14 @@
                     /**
                      * Deallocate a pointer given by an allocate call
                      * @param p the pointer on the first bytes allocated
+                     */
+                    void deallocate(T* p) {
+                        ::operator delete(p);
+                        p = nullptr;
+                    }
+                    /**
+                     * Deallocate a pointer given by an allocate call
+                     * @param p the pointer on the first bytes allocated
                      * @param n the number of object allocated
                      */
                     void deallocate(T* p, std::size_t n) {
@@ -85,9 +93,9 @@
                      * @param args the construction arguments
                      */
                     template <class K, class ... Args>
-                    void construct(K* p, Args && ... args) {
+                    K* construct(K* p, Args && ... args) {
                         assert(p != nullptr);
-                        ::new(static_cast <void*> (p)) K(std::forward<Args>(args)...);
+                        return static_cast <K*> (::new(static_cast <void*> (p)) K(std::forward<Args>(args)...));
                     }
                     /**
                      * Destroy an given to the given pointer

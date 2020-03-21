@@ -1,9 +1,9 @@
     
     /**
      * @file NRE_Allocator.hpp
-     * @brief Declaration of Memory's API's Object : Allocator
+     * @brief Declaration of Memory's API's Object : DirectAllocator
      * @author Louis ABEL
-     * @date 14/03/2020
+     * @date 21/03/2020
      * @copyright CC-BY-NC-SA
      */
     
@@ -26,17 +26,17 @@
         namespace Memory {
         
             /**
-             * @class Allocator
-             * @brief Default allocator using global new and delete
+             * @class DirectAllocator
+             * @brief Allocate memory using malloc and free directly
              */
             template <class T>
-            class Allocator : public IAllocator<Allocator<T>> {
+            class DirectAllocator : public IAllocator<DirectAllocator<T>> {
                 public: // Fields
                     template <typename>
                     struct isSame : std::false_type {
                     };
                     template <class K>
-                    struct isSame<Allocator<K>> : std::true_type {
+                    struct isSame<DirectAllocator<K>> : std::true_type {
                     };
     
                 public: // Methods
@@ -68,7 +68,7 @@
                      * @return  a pointer on the first allocated bytes
                      */
                     [[nodiscard]] T* allocate(std::size_t n) {
-                        return static_cast <T*> (::operator new(n * sizeof(T)));
+                        return static_cast <T*> (malloc(n * sizeof(T)));
                     }
                     /**
                      * Deallocate a pointer given by an allocate call
@@ -76,7 +76,8 @@
                      * @param n the number of object allocated
                      */
                     void deallocate(T* p, std::size_t n) {
-                        ::operator delete(p, n);
+                        (void)n;
+                        free(p);
                         p = nullptr;
                     }
                     /**
@@ -102,7 +103,7 @@
                      * @param o the other allocator to compare with this
                      * @return  the test result
                      */
-                    template <class K, typename std::enable_if<Allocator<T>::isSame<K>::value, int>::type = 0>
+                    template <class K, typename std::enable_if<DirectAllocator<T>::isSame<K>::value, int>::type = 0>
                     bool equal(K const& o) const {
                         (void)o;
                         return true;
@@ -112,7 +113,7 @@
                      * @param o the other allocator to compare with this
                      * @return  the test result
                      */
-                    template <class K, typename std::enable_if<!Allocator<T>::isSame<K>::value, int>::type = 0>
+                    template <class K, typename std::enable_if<!DirectAllocator<T>::isSame<K>::value, int>::type = 0>
                     bool equal(K const& o) const {
                         (void)o;
                         return false;
@@ -123,7 +124,7 @@
                      * @return  the test result
                      */
                     template <class K>
-                    bool operator ==(Allocator<K> const& o) const {
+                    bool operator ==(DirectAllocator<K> const& o) const {
                         return equal(o);
                     }
                     /**
@@ -132,7 +133,7 @@
                      * @return  the test result
                      */
                     template <class K>
-                    bool operator !=(Allocator<K> const& o) const {
+                    bool operator !=(DirectAllocator<K> const& o) const {
                         return  !(*this == o);
                     }
             };

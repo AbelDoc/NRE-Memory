@@ -59,10 +59,10 @@
                                 break;
                             }
                         }
-                        assert(toRemove != nullptr);
-                        
-                        allocated.erase(std::remove(allocated.begin(), allocated.end(), toRemove), allocated.end());
-                        delete toRemove;
+                        if (toRemove != nullptr) {
+                            allocated.erase(std::remove(allocated.begin(), allocated.end(), toRemove), allocated.end());
+                            delete toRemove;
+                        }
                     }
         
                 private:   // Methods
@@ -77,12 +77,16 @@
                      * MemoryManager Deconstructor
                      */
                     ~MemoryManager() {
-                        for (MemoryHelper* p : allocated) {
-                            std::cout << "Memory at : " << p->getData() << " has not been freed !" << std::endl;
-                            p->free();
-                            
-                            p->~MemoryHelper();
-                            free(p);
+                        if (allocated.isEmpty()) {
+                            std::cout << "Everything fine !" << std::endl;
+                        } else {
+                            for (MemoryHelper* p : allocated) {
+                                std::cout << "Memory at : " << p->getData() << " has not been freed !" << std::endl;
+                                p->free();
+        
+                                p->~MemoryHelper();
+                                free(p);
+                            }
                         }
                     }
             };

@@ -90,7 +90,8 @@
                      * @param p the pointer on the first bytes allocated
                      * @param n the number of object allocated
                      */
-                    void deallocate(T*& p, std::size_t) {
+                    void deallocate(T*& p, std::size_t n) {
+                        (void)n;
                         Utility::Singleton<MemoryManager>::get().removeMemory(p);
                         free(p);
                         p = nullptr;

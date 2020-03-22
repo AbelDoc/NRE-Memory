@@ -1,6 +1,6 @@
     
     /**
-     * @file NRE_Memory.hpp
+     * @file Header/NRE_Memory.hpp
      * @brief Declaration of Memory's API's Header
      * @author Louis ABEL
      * @date 14/03/2020

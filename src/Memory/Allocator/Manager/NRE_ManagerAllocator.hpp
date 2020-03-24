@@ -10,7 +10,6 @@
     #pragma once
 
     #include <cassert>
-    #include <limits>
     #include <memory>
     #include "../NRE_AllocatorTraits.hpp"
     #include "../../Manager/NRE_MemoryManager.hpp"

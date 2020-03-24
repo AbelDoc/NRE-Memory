@@ -12,7 +12,7 @@
     #include <algorithm>
     #include <Utility/Singleton/NRE_Singleton.hpp>
     #include <Utility/Detail/Vector/NRE_Vector.hpp>
-    #include "Allocator/Direct/NRE_DirectAllocator.hpp"
+    #include "../Allocator/Direct/NRE_DirectAllocator.hpp"
 
     #include "Data/NRE_Memory.hpp"
     
@@ -121,7 +121,7 @@
          */
         [[nodiscard]] void* operator new(std::size_t size) {
             if (void* data = malloc(size)) {
-                NRE::Memory::MemoryManage::store(data);
+                NRE::Memory::MemoryManager::store(data);
                 return data;
             }
             throw std::bad_alloc();
@@ -131,7 +131,7 @@
          * @param p the pointer to free
          */
         void operator delete(void* p) noexcept {
-            NRE::Memory::MemoryManage::remove(p);
+            NRE::Memory::MemoryManager::remove(p);
             free(p);
         }
         /**
@@ -141,7 +141,7 @@
          */
         void operator delete(void* p, std::size_t n) noexcept {
             (void)n;
-            NRE::Memory::MemoryManage::remove(p);
+            NRE::Memory::MemoryManager::remove(p);
             free(p);
         }
     #endif

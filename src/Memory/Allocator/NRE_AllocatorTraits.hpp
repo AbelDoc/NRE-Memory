@@ -9,6 +9,7 @@
     
     #pragma once
     
+    #include <limits>
     #include <type_traits>
     #include <utility>
     #include "Utility/Interfaces/NRE_StaticInterface.hpp"

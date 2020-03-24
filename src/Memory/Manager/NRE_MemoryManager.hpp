@@ -12,7 +12,7 @@
     #include <algorithm>
     #include <Utility/Singleton/NRE_Singleton.hpp>
     #include <Utility/Detail/Vector/NRE_Vector.hpp>
-    #include "../Allocator/NRE_DirectAllocator.hpp"
+    #include "Memory/Allocator/Direct/NRE_DirectAllocator.hpp"
 
     #include "Data/NRE_Memory.hpp"
     

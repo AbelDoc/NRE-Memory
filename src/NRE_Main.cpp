@@ -7,8 +7,9 @@
      * @copyright CC-BY-NC-SA
      */
      
-    #define NRE_USE_MEMORY_MANAGER
+    //#define NRE_USE_MEMORY_MANAGER
 
+    #include <iostream>
     #include "Header/NRE_Memory.hpp"
 
     using namespace NRE::Memory;
@@ -24,11 +25,7 @@
         std::cout << *p << std::endl;
         
         a.destroy(p);
-        //a.deallocate(p);
-        
-        int* q = new int(4321);
-        
-        std::cout << *q << std::endl;
+        a.deallocate(p);
         
         return 0;
     }

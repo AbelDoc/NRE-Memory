@@ -12,7 +12,7 @@
     #include <cassert>
     #include <limits>
     #include <memory>
-    #include "NRE_AllocatorTraits.hpp"
+    #include "../NRE_AllocatorTraits.hpp"
     
     /**
      * @namespace NRE

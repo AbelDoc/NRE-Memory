@@ -1,7 +1,7 @@
     
     /**
      * @file NRE_AllocatorTraits.hpp
-     * @brief Declaration of Memory's API's Object : AllocatorTraits
+     * @brief Declaration of Memory's API's Interface : AllocatorTraits
      * @author Louis ABEL
      * @date 14/03/2020
      * @copyright CC-BY-NC-SA
@@ -40,15 +40,15 @@
             class AllocatorTraits<Alloc<T, AllocArgs...>> : public Utility::StaticInterface<AllocatorTraits<Alloc<T, AllocArgs...>>> {
                 public:     // Traits
                     /**< The allocator type */
-                    typedef Alloc<T, AllocArgs...>       AllocatorType;
+                    using AllocatorType = Alloc<T, AllocArgs...>;
                     /**< The allocated type */
-                    typedef T                       ValueType;
+                    using ValueType     = T;
                     /**< The pointer on allocated type */
-                    typedef T*                      Pointer;
+                    using Pointer       = T*;
                     /**< The pointer on constant allocated type */
-                    typedef const T*                ConstPointer;
+                    using ConstPointer  = const T*;
                     /**< The allocator size type */
-                    typedef std::size_t             SizeType;
+                    using SizeType      = std::size_t;
                     
                     /**
                      * @class Rebinded

@@ -12,4 +12,4 @@
     #include "NRE_AllocatorTraits.hpp"
     #include "Default/NRE_DefaultAllocator.hpp"
     #include "Direct/NRE_DirectAllocator.hpp"
-    //#include "Manager/NRE_ManagerAllocator.hpp"
+    #include "Manager/NRE_ManagerAllocator.hpp"

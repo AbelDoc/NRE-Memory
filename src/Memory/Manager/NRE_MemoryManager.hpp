@@ -37,57 +37,76 @@
                     Utility::Detail::Vector<MemoryHelper*, DirectAllocator<MemoryHelper*>> allocated;   /**< Store all allocated pointer */
         
                 public :    // Methods
+                    //## Methods ##//
+                        /**
+                         * Store a memory pointer
+                         * @param data the pointer to memory
+                         */
+                        template <class T>
+                        void storeMemory(T* data) {
+                            DirectAllocator<Memory<T>> alloc;
+                            allocated.emplaceBack(alloc.construct(alloc.allocate(1), data));
+                        }
+                        /**
+                         * Remove a memory pointer
+                         * @param data the pointer to memory
+                         */
+                        template <class T>
+                        void removeMemory(T* data) {
+                            MemoryHelper* toRemove = nullptr;
+                            for (MemoryHelper* mem : allocated) {
+                                if (mem->getData() == data) {
+                                    toRemove = mem;
+                                    break;
+                                }
+                            }
+                            if (toRemove != nullptr) {
+                                allocated.erase(std::remove(allocated.begin(), allocated.end(), toRemove), allocated.end());
+                                delete toRemove;
+                            }
+                        }
+        
+                private:   // Methods
+                    //## Constructor ##//
+                        /**
+                         * Default constructor
+                         */
+                        MemoryManager() = default;
+            
+                    //## Deconstructor ##//
+                        /**
+                         * MemoryManager Deconstructor
+                         */
+                        ~MemoryManager() {
+                            if (allocated.isEmpty()) {
+                                std::cout << "Everything fine !" << std::endl;
+                            } else {
+                                for (MemoryHelper* p : allocated) {
+                                    std::cout << "Memory at : " << p->getData() << " has not been freed !" << std::endl;
+                                    p->free();
+            
+                                    p->~MemoryHelper();
+                                    free(p);
+                                }
+                            }
+                        }
+                    
+                public :    // Static
                     /**
                      * Store a memory pointer
                      * @param data the pointer to memory
                      */
                     template <class T>
-                    void storeMemory(T* data) {
-                        DirectAllocator<Memory<T>> alloc;
-                        allocated.emplaceBack(alloc.construct(alloc.allocate(1), data));
+                    static void store(T* data) {
+                        Utility::Singleton<MemoryManager>::get().storeMemory(data);
                     }
                     /**
                      * Remove a memory pointer
                      * @param data the pointer to memory
                      */
                     template <class T>
-                    void removeMemory(T* data) {
-                        MemoryHelper* toRemove = nullptr;
-                        for (MemoryHelper* mem : allocated) {
-                            if (mem->getData() == data) {
-                                toRemove = mem;
-                                break;
-                            }
-                        }
-                        if (toRemove != nullptr) {
-                            allocated.erase(std::remove(allocated.begin(), allocated.end(), toRemove), allocated.end());
-                            delete toRemove;
-                        }
-                    }
-        
-                private:   // Methods
-                    //## Constructor ##//
-                    /**
-                     * Default constructor
-                     */
-                    MemoryManager() = default;
-            
-                    //## Deconstructor ##//
-                    /**
-                     * MemoryManager Deconstructor
-                     */
-                    ~MemoryManager() {
-                        if (allocated.isEmpty()) {
-                            std::cout << "Everything fine !" << std::endl;
-                        } else {
-                            for (MemoryHelper* p : allocated) {
-                                std::cout << "Memory at : " << p->getData() << " has not been freed !" << std::endl;
-                                p->free();
-        
-                                p->~MemoryHelper();
-                                free(p);
-                            }
-                        }
+                    static void remove(T* data) {
+                        Utility::Singleton<MemoryManager>::get().removeMemory(data);
                     }
             };
             
@@ -101,19 +120,18 @@
          * @return     a pointer on the first allocated byte
          */
         [[nodiscard]] void* operator new(std::size_t size) {
-            void* data = malloc(size);
-            if (!data) {
-                throw std::bad_alloc();
+            if (void* data = malloc(size)) {
+                NRE::Memory::MemoryManage::store(data);
+                return data;
             }
-            NRE::Utility::Singleton<NRE::Memory::MemoryManager>::get().storeMemory(data);
-            return data;
+            throw std::bad_alloc();
         }
         /**
          * Delete a raw pointer
          * @param p the pointer to free
          */
         void operator delete(void* p) noexcept {
-            NRE::Utility::Singleton<NRE::Memory::MemoryManager>::get().removeMemory(p);
+            NRE::Memory::MemoryManage::remove(p);
             free(p);
         }
         /**
@@ -123,7 +141,7 @@
          */
         void operator delete(void* p, std::size_t n) noexcept {
             (void)n;
-            NRE::Utility::Singleton<NRE::Memory::MemoryManager>::get().removeMemory(p);
+            NRE::Memory::MemoryManage::remove(p);
             free(p);
         }
     #endif

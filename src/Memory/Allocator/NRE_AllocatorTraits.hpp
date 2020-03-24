@@ -130,5 +130,17 @@
                             this->impl().destroy(p);
                         }
             };
+    
+            /**
+             * @class IsAllocator
+             * @brief Check if the given template is an allocator class
+             */
+            template <class T>
+            struct IsAllocator : std::is_base_of<AllocatorTraits<T>, T> {
+            };
+    
+            /**< Shortcut to check if a template is an allocator */
+            template <class T>
+            constexpr bool IsAllocatorV = IsAllocator<T>::value;
         }
     }

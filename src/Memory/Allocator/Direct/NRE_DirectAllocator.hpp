@@ -48,7 +48,7 @@
                         /**
                          * Default constructor
                          */
-                        DirectAllocator() = default;
+                        DirectAllocator() noexcept = default;
             
                     //## Convertor ##//
                         /**
@@ -56,7 +56,7 @@
                          * @param alloc the allocator to convert
                          */
                         template <class K>
-                        DirectAllocator(DirectAllocator<K> const& alloc);
+                        DirectAllocator(DirectAllocator<K> const& alloc) noexcept;
         
                     //## Methods ##//
                         /**

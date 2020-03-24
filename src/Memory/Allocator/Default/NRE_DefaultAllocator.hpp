@@ -48,7 +48,7 @@
                         /**
                          * Default constructor
                          */
-                        DefaultAllocator() = default;
+                        DefaultAllocator() noexcept = default;
                         
                     //## Convertor ##//
                         /**
@@ -56,7 +56,7 @@
                          * @param alloc the allocator to convert
                          */
                         template <class K>
-                        DefaultAllocator(DefaultAllocator<K> const& alloc);
+                        DefaultAllocator(DefaultAllocator<K> const& alloc) noexcept;
                         
                     //## Methods ##//
                         /**

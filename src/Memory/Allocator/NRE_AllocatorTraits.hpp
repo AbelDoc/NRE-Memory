@@ -67,7 +67,7 @@
                         /**
                          * @return the maximum allocation size
                          */
-                        SizeType getMaxSize() const {
+                        SizeType getMaxSize() const noexcept {
                             return std::numeric_limits<std::size_t>::max() / sizeof(ValueType);
                         }
                         /**
@@ -75,7 +75,7 @@
                          * @param object the object to return his address
                          * @return       the object's address
                          */
-                        Pointer getAddress(ValueType& object) const {
+                        Pointer getAddress(ValueType& object) const noexcept {
                             return std::addressof(object);
                         }
                         /**
@@ -83,7 +83,7 @@
                          * @param object the object to return his address
                          * @return       the object's address
                          */
-                        ConstPointer getAddress(ValueType const& object) const {
+                        ConstPointer getAddress(ValueType const& object) const noexcept {
                             return std::addressof(object);
                         }
     

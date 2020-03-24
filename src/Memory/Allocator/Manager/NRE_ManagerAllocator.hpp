@@ -49,7 +49,7 @@
                         /**
                          * Default constructor
                          */
-                        ManagerAllocator() = default;
+                        ManagerAllocator() noexcept = default;
         
                     //## Convertor ##//
                         /**
@@ -57,7 +57,7 @@
                          * @param alloc the allocator to convert
                          */
                         template <class K>
-                        ManagerAllocator(ManagerAllocator<K> const& alloc);
+                        ManagerAllocator(ManagerAllocator<K> const& alloc) noexcept;
         
                     //## Methods ##//
                         /**

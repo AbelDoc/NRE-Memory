@@ -12,7 +12,7 @@
             
             template <class T>
             template <class K>
-            inline DirectAllocator<T>::DirectAllocator(DirectAllocator<K> const&) {
+            inline DirectAllocator<T>::DirectAllocator(DirectAllocator<K> const&) noexcept {
             }
             
             template <class T>

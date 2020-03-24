@@ -12,7 +12,7 @@
             
             template <class T>
             template <class K>
-            inline DefaultAllocator<T>::DefaultAllocator(DefaultAllocator<K> const&) {
+            inline DefaultAllocator<T>::DefaultAllocator(DefaultAllocator<K> const&) noexcept {
             }
             
             template <class T>

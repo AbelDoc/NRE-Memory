@@ -12,7 +12,7 @@
             
             template <class T>
             template <class K>
-            inline ManagerAllocator<T>::ManagerAllocator(ManagerAllocator<K> const&) {
+            inline ManagerAllocator<T>::ManagerAllocator(ManagerAllocator<K> const&) noexcept {
             }
             
             template <class T>

@@ -15,7 +15,6 @@
     using namespace NRE::Memory;
     using namespace NRE::Utility;
     
-    
     int main(int, char**) {
         Allocator<int> a;
         

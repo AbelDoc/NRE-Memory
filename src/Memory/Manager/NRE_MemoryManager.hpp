@@ -112,36 +112,3 @@
             
         }
     }
-
-    #ifdef NRE_USE_MEMORY_MANAGER
-        /**
-         * Allocate a given number of bytes
-         * @param size the number of bytes to allocate
-         * @return     a pointer on the first allocated byte
-         */
-        [[nodiscard]] void* operator new(std::size_t size) {
-            if (void* data = malloc(size)) {
-                NRE::Memory::MemoryManager::store(data);
-                return data;
-            }
-            throw std::bad_alloc();
-        }
-        /**
-         * Delete a raw pointer
-         * @param p the pointer to free
-         */
-        void operator delete(void* p) noexcept {
-            NRE::Memory::MemoryManager::remove(p);
-            free(p);
-        }
-        /**
-         * Delete a raw pointer
-         * @param p the pointer to free
-         * @param n the allocated size
-         */
-        void operator delete(void* p, std::size_t n) noexcept {
-            (void)n;
-            NRE::Memory::MemoryManager::remove(p);
-            free(p);
-        }
-    #endif

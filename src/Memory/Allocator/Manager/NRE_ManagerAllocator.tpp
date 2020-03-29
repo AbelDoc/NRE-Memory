@@ -25,17 +25,15 @@
             }
             
             template <class T>
-            inline void ManagerAllocator<T>::deallocate(Pointer& p) {
+            inline void ManagerAllocator<T>::deallocate(Pointer p) {
                 MemoryManager::remove(p);
                 free(p);
-                p = nullptr;
             }
             
             template <class T>
-            inline void ManagerAllocator<T>::deallocate(Pointer& p, SizeType) {
+            inline void ManagerAllocator<T>::deallocate(Pointer p, SizeType) {
                 MemoryManager::remove(p);
                 free(p);
-                p = nullptr;
             }
             
             template <class T>
@@ -47,8 +45,9 @@
             
             template <class T>
             template <class K>
-            inline void ManagerAllocator<T>::destroy(K* p) {
+            inline K* ManagerAllocator<T>::destroy(K* p) {
                 p->~K();
+                return p;
             }
             
         }

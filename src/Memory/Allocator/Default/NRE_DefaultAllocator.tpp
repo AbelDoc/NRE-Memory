@@ -21,15 +21,13 @@
             }
             
             template <class T>
-            inline void DefaultAllocator<T>::deallocate(Pointer& p) {
+            inline void DefaultAllocator<T>::deallocate(Pointer p) {
                 ::operator delete(p);
-                p = nullptr;
             }
             
             template <class T>
-            inline void DefaultAllocator<T>::deallocate(Pointer& p, SizeType n) {
+            inline void DefaultAllocator<T>::deallocate(Pointer p, SizeType n) {
                 ::operator delete(p, n);
-                p = nullptr;
             }
             
             template <class T>
@@ -41,8 +39,9 @@
             
             template <class T>
             template <class K>
-            inline void DefaultAllocator<T>::destroy(K* p) {
+            inline K* DefaultAllocator<T>::destroy(K* p) {
                 p->~K();
+                return p;
             }
             
         }

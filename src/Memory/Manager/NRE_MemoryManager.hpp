@@ -79,7 +79,7 @@
                          */
                         ~MemoryManager() {
                             if (allocated.isEmpty()) {
-                                std::cout << "Everything fine !" << std::endl;
+                                std::cout << "Everything's fine !" << std::endl;
                             } else {
                                 for (MemoryHelper* p : allocated) {
                                     std::cout << "Memory at : " << p->getData() << " has not been freed !" << std::endl;

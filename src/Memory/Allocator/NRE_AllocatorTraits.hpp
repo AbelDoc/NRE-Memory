@@ -101,7 +101,7 @@
                          * Deallocate a pointer given by an allocate call
                          * @param p the pointer on the first bytes allocated
                          */
-                        void deallocate(Pointer& p) {
+                        void deallocate(Pointer p) {
                             this->impl().deallocate(p);
                         }
                         /**
@@ -109,13 +109,14 @@
                          * @param p the pointer on the first bytes allocated
                          * @param n the number of object allocated
                          */
-                        void deallocate(Pointer& p, SizeType n) {
+                        void deallocate(Pointer p, SizeType n) {
                             this->impl().deallocate(p, n);
                         }
                         /**
                          * Construct a K-type object in the given pointer with given arguments
                          * @param p    the pointer to construct the object
                          * @param args the construction arguments
+                         * @return     the input pointer
                          */
                         template <class K, class ... Args>
                         K* construct(K* p, Args && ... args) {
@@ -124,10 +125,11 @@
                         /**
                          * Destroy an given to the given pointer
                          * @param p the object address
+                         * @return  the input pointer
                          */
                         template <class K>
-                        void destroy(K* p) {
-                            this->impl().destroy(p);
+                        K* destroy(K* p) {
+                            return this->impl().destroy(p);
                         }
             };
     

@@ -24,15 +24,13 @@
             }
             
             template <class T>
-            inline void DirectAllocator<T>::deallocate(Pointer& p) {
+            inline void DirectAllocator<T>::deallocate(Pointer p) {
                 free(p);
-                p = nullptr;
             }
             
             template <class T>
-            inline void DirectAllocator<T>::deallocate(Pointer& p, SizeType) {
+            inline void DirectAllocator<T>::deallocate(Pointer p, SizeType) {
                 free(p);
-                p = nullptr;
             }
             
             template <class T>
@@ -44,8 +42,9 @@
             
             template <class T>
             template <class K>
-            inline void DirectAllocator<T>::destroy(K* p) {
+            inline K* DirectAllocator<T>::destroy(K* p) {
                 p->~K();
+                return p;
             }
             
         }

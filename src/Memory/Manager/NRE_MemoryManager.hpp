@@ -31,8 +31,7 @@
              * @class MemoryManager
              * @brief Store current allocated memory and tell if any memory leak occurs
              */
-            class MemoryManager  : public Utility::Singleton<MemoryManager> {
-                friend class Singleton<MemoryManager>;
+            class MemoryManager {
                 private:    // Fields
                     Utility::Detail::Vector<MemoryHelper*, DirectAllocator<MemoryHelper*>> allocated;   /**< Store all allocated pointer */
         
@@ -65,8 +64,8 @@
                                 delete toRemove;
                             }
                         }
-        
-                private:   // Methods
+
+            public:   // Methods
                     //## Constructor ##//
                         /**
                          * Default constructor
@@ -92,13 +91,15 @@
                         }
                     
                 public :    // Static
+                    static MemoryManager& memoryManager;
+                    
                     /**
                      * Store a memory pointer
                      * @param data the pointer to memory
                      */
                     template <class T>
                     static void store(T* data) {
-                        Utility::Singleton<MemoryManager>::get().storeMemory(data);
+                        memoryManager.storeMemory(data);
                     }
                     /**
                      * Remove a memory pointer
@@ -106,9 +107,59 @@
                      */
                     template <class T>
                     static void remove(T* data) {
-                        Utility::Singleton<MemoryManager>::get().removeMemory(data);
+                        memoryManager.removeMemory(data);
                     }
             };
             
+            inline int niftyCounter = 0;
+            inline typename std::aligned_storage<sizeof (MemoryManager), alignof (MemoryManager)>::type memoryManagerBuffer;
+            inline MemoryManager& MemoryManager::memoryManager = reinterpret_cast<MemoryManager&> (memoryManagerBuffer);
+            
+            static struct MemoryManagerInitializer {
+                MemoryManagerInitializer() {
+                    if (niftyCounter++ == 0) {
+                        new (&MemoryManager::memoryManager) MemoryManager();
+                    }
+                }
+                ~MemoryManagerInitializer() {
+                    if (--niftyCounter == 0) {
+                        (&MemoryManager::memoryManager)->~MemoryManager();
+                    }
+                }
+            } memoryManagerInitializer;
+            
         }
     }
+
+    #ifdef NRE_USE_MEMORY_MANAGER
+        /**
+         * Allocate a given number of bytes
+         * @param size the number of bytes to allocate
+         * @return     a pointer on the first allocated byte
+         */
+        [[nodiscard]] inline void* operator new(std::size_t size) {
+            if (void* data = malloc(size)) {
+                NRE::Memory::MemoryManager::store(data);
+                return data;
+            }
+            throw std::bad_alloc();
+        }
+        /**
+         * Delete a raw pointer
+         * @param p the pointer to free
+         */
+        inline void operator delete(void* p) noexcept {
+            NRE::Memory::MemoryManager::remove(p);
+            free(p);
+        }
+        /**
+         * Delete a raw pointer
+         * @param p the pointer to free
+         * @param n the allocated size
+         */
+        inline void operator delete(void* p, std::size_t n) noexcept {
+            (void)n;
+            NRE::Memory::MemoryManager::remove(p);
+            free(p);
+        }
+    #endif

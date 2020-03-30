@@ -105,7 +105,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Declaration of <a class="el" href="namespace_memory.php" title="Memory&#39;s API. ">Memory</a>'s API's Header.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="_n_r_e___allocator_8hpp_source.php">../Memory/Allocator/NRE_Allocator.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_n_r_e___memory_manager_8hpp_source.php">../Memory/Manager/NRE_MemoryManager.hpp</a>&quot;</code><br />
 </div>
 <p><a href="_header_2_n_r_e___memory_8hpp_source.php">Go to the source code of this file.</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

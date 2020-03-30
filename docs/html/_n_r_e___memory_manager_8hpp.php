@@ -99,7 +99,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">NRE_MemoryManager.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -120,6 +121,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php">NRE::Memory::MemoryManager</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store current allocated memory and tell if any memory leak occurs.  <a href="class_n_r_e_1_1_memory_1_1_memory_manager.php#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>NRE::Memory::MemoryManagerInitializer</b></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manage <a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php" title="Store current allocated memory and tell if any memory leak occurs. ">MemoryManager</a> initialization using nifty counter. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -129,13 +133,63 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespace_memory"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_memory.php">Memory</a></td></tr>
 <tr class="memdesc:namespace_memory"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_memory.php" title="Memory&#39;s API. ">Memory</a>'s API. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a23b218ee9c1e6e274359133d8362669b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_n_r_e___memory_manager_8hpp.php#a23b218ee9c1e6e274359133d8362669b">NRE::Memory::_memoryManagerNiftyCounter</a> = 0</td></tr>
+<tr class="separator:a23b218ee9c1e6e274359133d8362669b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03615f9f66e855c06588538b439723aa"><td class="memItemLeft" align="right" valign="top">std::aligned_storage&lt; sizeof(MemoryManager), alignof(MemoryManager)&gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_n_r_e___memory_manager_8hpp.php#a03615f9f66e855c06588538b439723aa">NRE::Memory::_memoryManagerBuffer</a></td></tr>
+<tr class="separator:a03615f9f66e855c06588538b439723aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Declaration of <a class="el" href="namespace_memory.php" title="Memory&#39;s API. ">Memory</a>'s API's Object : MemoryManager. </p>
 <dl class="section author"><dt>Author</dt><dd>Louis ABEL </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>21/03/2020 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>CC-BY-NC-SA </dd></dl>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="file_a03615f9f66e855c06588538b439723aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::aligned_storage&lt;sizeof (MemoryManager), alignof (MemoryManager)&gt;::type NRE::Memory::_memoryManagerBuffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="class_n_r_e_1_1_memory_1_1_memory.php" title="Store a memory pointer, and manage it in a typed manner. ">Memory</a> manager buffer </p>
+
+</div>
+</div>
+<a class="anchor" id="file_a23b218ee9c1e6e274359133d8362669b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NRE::Memory::_memoryManagerNiftyCounter = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Nifty counter to manage memory manager initialization </p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 </div>

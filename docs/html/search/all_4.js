@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['getaddress',['getAddress',['../class_n_r_e_1_1_memory_1_1_allocator_traits_3_01_alloc_3_01_t_00_01_alloc_args_8_8_8_01_4_01_4.php#a206d2739b7cb99d27af15b226d2eeb71',1,'NRE::Memory::AllocatorTraits&lt; Alloc&lt; T, AllocArgs... &gt; &gt;::getAddress(ValueType &amp;object) const noexcept'],['../class_n_r_e_1_1_memory_1_1_allocator_traits_3_01_alloc_3_01_t_00_01_alloc_args_8_8_8_01_4_01_4.php#a05bf60002102a9b419ff32b93cca043c',1,'NRE::Memory::AllocatorTraits&lt; Alloc&lt; T, AllocArgs... &gt; &gt;::getAddress(ValueType const &amp;object) const noexcept']]],
-  ['getdata',['getData',['../class_n_r_e_1_1_memory_1_1_memory_helper.php#a48a9ae66560f9c35941d5bcf47a128e5',1,'NRE::Memory::MemoryHelper']]],
-  ['getmaxsize',['getMaxSize',['../class_n_r_e_1_1_memory_1_1_allocator_traits_3_01_alloc_3_01_t_00_01_alloc_args_8_8_8_01_4_01_4.php#a6781b6da52549beb2df1a91013a377bf',1,'NRE::Memory::AllocatorTraits&lt; Alloc&lt; T, AllocArgs... &gt; &gt;']]]
+  ['free',['free',['../class_n_r_e_1_1_memory_1_1_memory.php#a889a76a7e78e8620c19cf13c9d5ebc90',1,'NRE::Memory::Memory::free()'],['../class_n_r_e_1_1_memory_1_1_memory_3_01void_01_4.php#ab4ab52fa8b31cef1f27d0b5aeaa7b2dc',1,'NRE::Memory::Memory&lt; void &gt;::free()'],['../class_n_r_e_1_1_memory_1_1_memory_helper.php#a7682a33118461ea406c6b9a9f2f6b129',1,'NRE::Memory::MemoryHelper::free()']]]
 ];

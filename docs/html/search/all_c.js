@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['traits',['Traits',['../class_n_r_e_1_1_memory_1_1_default_allocator.php#a8371653e924ca448e5923a97989a450b',1,'NRE::Memory::DefaultAllocator::Traits()'],['../class_n_r_e_1_1_memory_1_1_direct_allocator.php#a595cbc869a214f4ccb067037d237c67a',1,'NRE::Memory::DirectAllocator::Traits()'],['../class_n_r_e_1_1_memory_1_1_manager_allocator.php#ab048b421b2333b457602c64a84b785c6',1,'NRE::Memory::ManagerAllocator::Traits()']]],
-  ['type',['Type',['../struct_n_r_e_1_1_memory_1_1_allocator_traits_3_01_alloc_3_01_t_00_01_alloc_args_8_8_8_01_4_01_4_1_1_rebinded.php#a87dafbbe405d07ecb9842fe057b16b0f',1,'NRE::Memory::AllocatorTraits&lt; Alloc&lt; T, AllocArgs... &gt; &gt;::Rebinded']]]
+  ['sizetype',['SizeType',['../class_n_r_e_1_1_memory_1_1_default_allocator.php#ac1e05995ba31cba1bb617dfe66ad1039',1,'NRE::Memory::DefaultAllocator::SizeType()'],['../class_n_r_e_1_1_memory_1_1_direct_allocator.php#a968f902a7ddf1695473261b9708456af',1,'NRE::Memory::DirectAllocator::SizeType()'],['../class_n_r_e_1_1_memory_1_1_manager_allocator.php#a9a0a3bd9c58d160d630e3f6f601b6a02',1,'NRE::Memory::ManagerAllocator::SizeType()'],['../class_n_r_e_1_1_memory_1_1_allocator_traits_3_01_alloc_3_01_t_00_01_alloc_args_8_8_8_01_4_01_4.php#a7f223d5595247900e62f2ee05de7f7d0',1,'NRE::Memory::AllocatorTraits&lt; Alloc&lt; T, AllocArgs... &gt; &gt;::SizeType()']]],
+  ['store',['store',['../class_n_r_e_1_1_memory_1_1_memory_manager.php#a78ea393083fcc8f85e2160f830c1dd8d',1,'NRE::Memory::MemoryManager']]],
+  ['storememory',['storeMemory',['../class_n_r_e_1_1_memory_1_1_memory_manager.php#a88977c69bf179914fdf44ca29d420cfa',1,'NRE::Memory::MemoryManager']]]
 ];

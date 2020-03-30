@@ -91,7 +91,7 @@
                         }
                     
                 public :    // Static
-                    static MemoryManager& memoryManager;
+                    static MemoryManager& _memoryManager;    /**< The unique memory manager instance */
                     
                     /**
                      * Store a memory pointer
@@ -111,22 +111,26 @@
                     }
             };
             
-            inline int niftyCounter = 0;
-            inline typename std::aligned_storage<sizeof (MemoryManager), alignof (MemoryManager)>::type memoryManagerBuffer;
-            inline MemoryManager& MemoryManager::memoryManager = reinterpret_cast<MemoryManager&> (memoryManagerBuffer);
+            inline int _memoryManagerNiftyCounter = 0;                                                                          /**< Nifty counter to manage memory manager initialization */
+            inline typename std::aligned_storage<sizeof (MemoryManager), alignof (MemoryManager)>::type _memoryManagerBuffer;   /**< Memory manager buffer */
+            inline MemoryManager& MemoryManager::_memoryManager = reinterpret_cast<MemoryManager&> (_memoryManagerBuffer);      /**< Initialize memory manager with buffer */
             
+            /**
+             * @struct MemoryManagerInitializer
+             * @brief Manage MemoryManager initialization using nifty counter
+             */
             static struct MemoryManagerInitializer {
                 MemoryManagerInitializer() {
-                    if (niftyCounter++ == 0) {
-                        new (&MemoryManager::memoryManager) MemoryManager();
+                    if (_memoryManagerNiftyCounter++ == 0) {
+                        new (&MemoryManager::_memoryManager) MemoryManager();
                     }
                 }
                 ~MemoryManagerInitializer() {
-                    if (--niftyCounter == 0) {
-                        (&MemoryManager::memoryManager)->~MemoryManager();
+                    if (--_memoryManagerNiftyCounter == 0) {
+                        (&MemoryManager::_memoryManager)->~MemoryManager();
                     }
                 }
-            } memoryManagerInitializer;
+            } _memoryManagerInitializer;
             
         }
     }

@@ -103,7 +103,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_n_r_e_1_1_memory_1_1_memory_manager-members.php">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">NRE::Memory::MemoryManager Class Reference</div>  </div>
@@ -114,14 +114,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <a href="class_n_r_e_1_1_memory_1_1_memory_manager.php#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_n_r_e___memory_manager_8hpp_source.php">NRE_MemoryManager.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for NRE::Memory::MemoryManager:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_n_r_e_1_1_memory_1_1_memory_manager.png" usemap="#NRE::Memory::MemoryManager_map" alt=""/>
-  <map id="NRE::Memory::MemoryManager_map" name="NRE::Memory::MemoryManager_map">
-</map>
- </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -131,6 +123,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adb396c53f7b64f8b92880463dc56d6a5"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:adb396c53f7b64f8b92880463dc56d6a5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php#adb396c53f7b64f8b92880463dc56d6a5">removeMemory</a> (T *data)</td></tr>
 <tr class="separator:adb396c53f7b64f8b92880463dc56d6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c0c5f666e66b540830b47a3e20a00c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php#a29c0c5f666e66b540830b47a3e20a00c">MemoryManager</a> ()=default</td></tr>
+<tr class="separator:a29c0c5f666e66b540830b47a3e20a00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18fadf7c0b4243bf09ff0bd412df7bd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php#a18fadf7c0b4243bf09ff0bd412df7bd7">~MemoryManager</a> ()</td></tr>
+<tr class="separator:a18fadf7c0b4243bf09ff0bd412df7bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -141,15 +137,63 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a106b7a020213d42ae655b1f683332538"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php#a106b7a020213d42ae655b1f683332538">remove</a> (T *data)</td></tr>
 <tr class="separator:a106b7a020213d42ae655b1f683332538"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:a0e6ed9484856c98bf5b4d225aeeaa244"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e6ed9484856c98bf5b4d225aeeaa244"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>Singleton&lt; MemoryManager &gt;</b></td></tr>
-<tr class="separator:a0e6ed9484856c98bf5b4d225aeeaa244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:af60b04371c1aeb81e3ff5425318f3f01"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php">MemoryManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php#af60b04371c1aeb81e3ff5425318f3f01">_memoryManager</a> = reinterpret_cast&lt;<a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php">MemoryManager</a>&amp;&gt; (_memoryManagerBuffer)</td></tr>
+<tr class="separator:af60b04371c1aeb81e3ff5425318f3f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Store current allocated memory and tell if any memory leak occurs. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a29c0c5f666e66b540830b47a3e20a00c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NRE::Memory::MemoryManager::MemoryManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Default constructor </p>
+
+</div>
+</div>
+<a class="anchor" id="a18fadf7c0b4243bf09ff0bd412df7bd7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NRE::Memory::MemoryManager::~MemoryManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php" title="Store current allocated memory and tell if any memory leak occurs. ">MemoryManager</a> Deconstructor </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a106b7a020213d42ae655b1f683332538"></a>
 <div class="memitem">
 <div class="memproto">
@@ -275,6 +319,29 @@ template&lt;class T &gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="af60b04371c1aeb81e3ff5425318f3f01"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php">MemoryManager</a> &amp; NRE::Memory::MemoryManager::_memoryManager = reinterpret_cast&lt;<a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php">MemoryManager</a>&amp;&gt; (_memoryManagerBuffer)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The unique memory manager instance</p>
+<p>Initialize memory manager with buffer </p>
 
 </div>
 </div>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['isallocatorv',['IsAllocatorV',['../_n_r_e___allocator_traits_8hpp.php#a4694f8b2130e99c5790e9ee649620993',1,'NRE::Memory']]]
+  ['data',['data',['../class_n_r_e_1_1_memory_1_1_memory_helper.php#a931d45f5fa663a18b21f8f5c99e1c242',1,'NRE::Memory::MemoryHelper']]]
 ];

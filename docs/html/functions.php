@@ -90,6 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
+      <li><a href="#index__"><span>_</span></a></li>
       <li><a href="#index_a"><span>a</span></a></li>
       <li><a href="#index_c"><span>c</span></a></li>
       <li><a href="#index_d"><span>d</span></a></li>
@@ -122,6 +123,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="contents">
 <div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
+
+<h3><a class="anchor" id="index__"></a>- _ -</h3><ul>
+<li>_memoryManager
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php#af60b04371c1aeb81e3ff5425318f3f01">NRE::Memory::MemoryManager</a>
+</li>
+</ul>
+
 
 <h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
 <li>allocate()
@@ -163,7 +171,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#aa57d4310b6134d006b7803085a50aa75">NRE::Memory::ManagerAllocator&lt; T &gt;</a>
 </li>
 <li>DefaultAllocator()
-: <a class="el" href="class_n_r_e_1_1_memory_1_1_default_allocator.php#adc2634bd4d47a2b862bb444732dceaeb">NRE::Memory::DefaultAllocator&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_default_allocator.php#a0e16fdddca59a06b56d1892f5a69fdec">NRE::Memory::DefaultAllocator&lt; T &gt;</a>
 </li>
 <li>destroy()
 : <a class="el" href="class_n_r_e_1_1_memory_1_1_allocator_traits_3_01_alloc_3_01_t_00_01_alloc_args_8_8_8_01_4_01_4.php#a9fde1294b99e6d45bea2638dfb0eb896">NRE::Memory::AllocatorTraits&lt; Alloc&lt; T, AllocArgs... &gt; &gt;</a>
@@ -209,6 +217,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>MemoryHelper()
 : <a class="el" href="class_n_r_e_1_1_memory_1_1_memory_helper.php#aba2fc0b8ec9e9e8fed7db31bd3b6d25e">NRE::Memory::MemoryHelper</a>
+</li>
+<li>MemoryManager()
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php#a29c0c5f666e66b540830b47a3e20a00c">NRE::Memory::MemoryManager</a>
 </li>
 </ul>
 
@@ -284,6 +295,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h3><a class="anchor" id="index_0x7e"></a>- ~ -</h3><ul>
 <li>~MemoryHelper()
 : <a class="el" href="class_n_r_e_1_1_memory_1_1_memory_helper.php#ab101312e57c8f2d0f5b98534f88f57ac">NRE::Memory::MemoryHelper</a>
+</li>
+<li>~MemoryManager()
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php#a18fadf7c0b4243bf09ff0bd412df7bd7">NRE::Memory::MemoryManager</a>
 </li>
 </ul>
 </div><!-- contents -->

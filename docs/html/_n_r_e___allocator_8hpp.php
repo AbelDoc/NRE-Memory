@@ -107,7 +107,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &quot;<a class="el" href="_n_r_e___allocator_traits_8hpp_source.php">NRE_AllocatorTraits.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_n_r_e___default_allocator_8hpp_source.php">Default/NRE_DefaultAllocator.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_n_r_e___direct_allocator_8hpp_source.php">Direct/NRE_DirectAllocator.hpp</a>&quot;</code><br />
-<code>#include &quot;Manager/NRE_ManagerAllocator.hpp&quot;</code><br />
 </div>
 <p><a href="_n_r_e___allocator_8hpp_source.php">Go to the source code of this file.</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

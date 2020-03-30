@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.8.11"/>
         <script type="text/javascript" src="../../js/jquery-2.1.1.min.js"></script>
-        <title>NRE-Memory: /mnt/c/Users/abell/Documents/GitHub/NRE-Memory/src/Memory/Allocator/NRE_Allocator.hpp Source File</title>
+        <title>NRE-Memory: File Members</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -75,8 +75,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.php"><span>File&#160;List</span></a></li>
+      <li class="current"><a href="globals.php"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li class="current"><a href="globals.php"><span>All</span></a></li>
+      <li><a href="globals_func.php"><span>Functions</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -91,20 +99,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.php">src</a></li><li class="navelem"><a class="el" href="dir_223fe3ddb66d6cdaa34448ac551f01ae.php">Memory</a></li><li class="navelem"><a class="el" href="dir_90418763254490afbe31fb653731f493.php">Allocator</a></li>  </ul>
-</div>
-</div><!-- top -->
-<div class="header">
-  <div class="headertitle">
-<div class="title">NRE_Allocator.hpp</div>  </div>
-</div><!--header-->
 <div class="contents">
-<a href="_n_r_e___allocator_8hpp.php">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;    </div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">    #pragma once</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    </div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="_n_r_e___allocator_traits_8hpp.php">NRE_AllocatorTraits.hpp</a>&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="_n_r_e___default_allocator_8hpp.php">Default/NRE_DefaultAllocator.hpp</a>&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="_n_r_e___direct_allocator_8hpp.php">Direct/NRE_DirectAllocator.hpp</a>&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">    #ifdef NRE_USE_MEMORY_MANAGER</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">        #include &quot;Manager/NRE_ManagerAllocator.hpp&quot;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">    #endif</span></div><div class="ttc" id="_n_r_e___direct_allocator_8hpp_php"><div class="ttname"><a href="_n_r_e___direct_allocator_8hpp.php">NRE_DirectAllocator.hpp</a></div><div class="ttdoc">Declaration of Memory&amp;#39;s API&amp;#39;s Object : DirectAllocator. </div></div>
-<div class="ttc" id="_n_r_e___default_allocator_8hpp_php"><div class="ttname"><a href="_n_r_e___default_allocator_8hpp.php">NRE_DefaultAllocator.hpp</a></div><div class="ttdoc">Declaration of Memory&amp;#39;s API&amp;#39;s Object : DefaultAllocator. </div></div>
-<div class="ttc" id="_n_r_e___allocator_traits_8hpp_php"><div class="ttname"><a href="_n_r_e___allocator_traits_8hpp.php">NRE_AllocatorTraits.hpp</a></div><div class="ttdoc">Declaration of Memory&amp;#39;s API&amp;#39;s Interface : AllocatorTraits. </div></div>
-</div><!-- fragment --></div><!-- contents -->
+<div class="textblock">Here is a list of all documented file members with links to the documentation:</div><ul>
+<li>operator delete()
+: <a class="el" href="_n_r_e___memory_manager_8hpp.php#a7988d271b794871cc241b736a115251a">NRE_MemoryManager.hpp</a>
+</li>
+<li>operator new()
+: <a class="el" href="_n_r_e___memory_manager_8hpp.php#a97108c6955492cb802db05624a375c6e">NRE_MemoryManager.hpp</a>
+</li>
+</ul>
+</div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 </div>

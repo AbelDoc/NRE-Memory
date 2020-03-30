@@ -195,6 +195,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>MemoryHelper()
 : <a class="el" href="class_n_r_e_1_1_memory_1_1_memory_helper.php#aba2fc0b8ec9e9e8fed7db31bd3b6d25e">NRE::Memory::MemoryHelper</a>
 </li>
+<li>MemoryManager()
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php#a29c0c5f666e66b540830b47a3e20a00c">NRE::Memory::MemoryManager</a>
+</li>
 </ul>
 
 
@@ -228,6 +231,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h3><a class="anchor" id="index_0x7e"></a>- ~ -</h3><ul>
 <li>~MemoryHelper()
 : <a class="el" href="class_n_r_e_1_1_memory_1_1_memory_helper.php#ab101312e57c8f2d0f5b98534f88f57ac">NRE::Memory::MemoryHelper</a>
+</li>
+<li>~MemoryManager()
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php#a18fadf7c0b4243bf09ff0bd412df7bd7">NRE::Memory::MemoryManager</a>
 </li>
 </ul>
 </div><!-- contents -->

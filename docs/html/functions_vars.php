@@ -105,6 +105,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="contents">
 &#160;<ul>
+<li>_memoryManager
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php#af60b04371c1aeb81e3ff5425318f3f01">NRE::Memory::MemoryManager</a>
+</li>
 <li>data
 : <a class="el" href="class_n_r_e_1_1_memory_1_1_memory_helper.php#a931d45f5fa663a18b21f8f5c99e1c242">NRE::Memory::MemoryHelper</a>
 </li>

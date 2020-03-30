@@ -102,6 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_n_r_e_1_1_memory_1_1_memory_manager-members.php">List of all members</a>  </div>
   <div class="headertitle">
@@ -131,6 +132,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adb396c53f7b64f8b92880463dc56d6a5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php#adb396c53f7b64f8b92880463dc56d6a5">removeMemory</a> (T *data)</td></tr>
 <tr class="separator:adb396c53f7b64f8b92880463dc56d6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a78ea393083fcc8f85e2160f830c1dd8d"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a78ea393083fcc8f85e2160f830c1dd8d"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php#a78ea393083fcc8f85e2160f830c1dd8d">store</a> (T *data)</td></tr>
+<tr class="separator:a78ea393083fcc8f85e2160f830c1dd8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a106b7a020213d42ae655b1f683332538"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a106b7a020213d42ae655b1f683332538"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php#a106b7a020213d42ae655b1f683332538">remove</a> (T *data)</td></tr>
+<tr class="separator:a106b7a020213d42ae655b1f683332538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a0e6ed9484856c98bf5b4d225aeeaa244"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e6ed9484856c98bf5b4d225aeeaa244"></a>
@@ -140,6 +150,38 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Singleton&lt; Memory
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Store current allocated memory and tell if any memory leak occurs. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a106b7a020213d42ae655b1f683332538"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NRE::Memory::MemoryManager::remove </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Remove a memory pointer </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>the pointer to memory </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="adb396c53f7b64f8b92880463dc56d6a5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -164,6 +206,38 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Remove a memory pointer </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>the pointer to memory </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a78ea393083fcc8f85e2160f830c1dd8d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void NRE::Memory::MemoryManager::store </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Store a memory pointer </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>the pointer to memory </td></tr>
   </table>

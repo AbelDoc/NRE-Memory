@@ -1,10 +1,14 @@
 var searchData=
 [
-  ['managerallocator',['ManagerAllocator',['../class_n_r_e_1_1_memory_1_1_manager_allocator.php',1,'NRE::Memory']]],
-  ['memory',['Memory',['../class_n_r_e_1_1_memory_1_1_memory.php',1,'NRE::Memory']]],
-  ['memory',['Memory',['../namespace_memory.php',1,'Memory'],['../class_n_r_e_1_1_memory_1_1_memory.php#ac16541a849ddb56c20f7a86cceda80fb',1,'NRE::Memory::Memory::Memory()'],['../class_n_r_e_1_1_memory_1_1_memory_3_01void_01_4.php#a000e3731b80015dd6e9cf2c6c059dbb4',1,'NRE::Memory::Memory&lt; void &gt;::Memory()']]],
-  ['memory_3c_20void_20_3e',['Memory&lt; void &gt;',['../class_n_r_e_1_1_memory_1_1_memory_3_01void_01_4.php',1,'NRE::Memory']]],
-  ['memoryhelper',['MemoryHelper',['../class_n_r_e_1_1_memory_1_1_memory_helper.php',1,'NRE::Memory']]],
-  ['memoryhelper',['MemoryHelper',['../class_n_r_e_1_1_memory_1_1_memory_helper.php#aba2fc0b8ec9e9e8fed7db31bd3b6d25e',1,'NRE::Memory::MemoryHelper::MemoryHelper(void *d)'],['../class_n_r_e_1_1_memory_1_1_memory_helper.php#a8ef572dbda6051612de78c8d5ff33cad',1,'NRE::Memory::MemoryHelper::MemoryHelper(MemoryHelper &amp;&amp;m)']]],
-  ['memorymanager',['MemoryManager',['../class_n_r_e_1_1_memory_1_1_memory_manager.php',1,'NRE::Memory']]]
+  ['nre_2dmemory',['NRE-Memory',['../index.php',1,'']]],
+  ['nre',['NRE',['../namespace_n_r_e.php',1,'']]],
+  ['nre_5fallocator_2ehpp',['NRE_Allocator.hpp',['../_n_r_e___allocator_8hpp.php',1,'']]],
+  ['nre_5fallocatortraits_2ehpp',['NRE_AllocatorTraits.hpp',['../_n_r_e___allocator_traits_8hpp.php',1,'']]],
+  ['nre_5fdefaultallocator_2ehpp',['NRE_DefaultAllocator.hpp',['../_n_r_e___default_allocator_8hpp.php',1,'']]],
+  ['nre_5fdirectallocator_2ehpp',['NRE_DirectAllocator.hpp',['../_n_r_e___direct_allocator_8hpp.php',1,'']]],
+  ['nre_5fmain_2ecpp',['NRE_Main.cpp',['../_n_r_e___main_8cpp.php',1,'']]],
+  ['nre_5fmemory_2ehpp',['NRE_Memory.hpp',['../_header_2_n_r_e___memory_8hpp.php',1,'']]],
+  ['nre_5fmemory_2ehpp',['NRE_Memory.hpp',['../_memory_2_manager_2_data_2_n_r_e___memory_8hpp.php',1,'']]],
+  ['nre_5fmemoryhelper_2ehpp',['NRE_MemoryHelper.hpp',['../_n_r_e___memory_helper_8hpp.php',1,'']]],
+  ['nre_5fmemorymanager_2ehpp',['NRE_MemoryManager.hpp',['../_n_r_e___memory_manager_8hpp.php',1,'']]]
 ];

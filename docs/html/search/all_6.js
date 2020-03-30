@@ -1,13 +1,11 @@
 var searchData=
 [
-  ['iallocator',['IAllocator',['../class_n_r_e_1_1_memory_1_1_i_allocator.php',1,'NRE::Memory']]],
-  ['iallocator_3c_20defaultallocator_3c_20t_20_3e_20_3e',['IAllocator&lt; DefaultAllocator&lt; T &gt; &gt;',['../class_n_r_e_1_1_memory_1_1_i_allocator.php',1,'NRE::Memory']]],
-  ['iallocator_3c_20directallocator_3c_20t_20_3e_20_3e',['IAllocator&lt; DirectAllocator&lt; T &gt; &gt;',['../class_n_r_e_1_1_memory_1_1_i_allocator.php',1,'NRE::Memory']]],
-  ['iallocator_3c_20managerallocator_3c_20t_20_3e_20_3e',['IAllocator&lt; ManagerAllocator&lt; T &gt; &gt;',['../class_n_r_e_1_1_memory_1_1_i_allocator.php',1,'NRE::Memory']]],
-  ['issame',['isSame',['../struct_n_r_e_1_1_memory_1_1_direct_allocator_1_1is_same.php',1,'NRE::Memory::DirectAllocator']]],
-  ['issame',['isSame',['../struct_n_r_e_1_1_memory_1_1_default_allocator_1_1is_same.php',1,'NRE::Memory::DefaultAllocator']]],
-  ['issame',['isSame',['../struct_n_r_e_1_1_memory_1_1_manager_allocator_1_1is_same.php',1,'NRE::Memory::ManagerAllocator']]],
-  ['issame_3c_20defaultallocator_3c_20k_20_3e_20_3e',['isSame&lt; DefaultAllocator&lt; K &gt; &gt;',['../struct_n_r_e_1_1_memory_1_1_default_allocator_1_1is_same_3_01_default_allocator_3_01_k_01_4_01_4.php',1,'NRE::Memory::DefaultAllocator']]],
-  ['issame_3c_20directallocator_3c_20k_20_3e_20_3e',['isSame&lt; DirectAllocator&lt; K &gt; &gt;',['../struct_n_r_e_1_1_memory_1_1_direct_allocator_1_1is_same_3_01_direct_allocator_3_01_k_01_4_01_4.php',1,'NRE::Memory::DirectAllocator']]],
-  ['issame_3c_20managerallocator_3c_20k_20_3e_20_3e',['isSame&lt; ManagerAllocator&lt; K &gt; &gt;',['../struct_n_r_e_1_1_memory_1_1_manager_allocator_1_1is_same_3_01_manager_allocator_3_01_k_01_4_01_4.php',1,'NRE::Memory::ManagerAllocator']]]
+  ['managerallocator',['ManagerAllocator',['../class_n_r_e_1_1_memory_1_1_manager_allocator.php',1,'NRE::Memory']]],
+  ['managerallocator',['ManagerAllocator',['../class_n_r_e_1_1_memory_1_1_manager_allocator.php#ac48608f8fb4cc048df2b65e10a050156',1,'NRE::Memory::ManagerAllocator::ManagerAllocator() noexcept=default'],['../class_n_r_e_1_1_memory_1_1_manager_allocator.php#a93c13e6e825015c95fa9d8857dbb9011',1,'NRE::Memory::ManagerAllocator::ManagerAllocator(ManagerAllocator&lt; K &gt; const &amp;alloc) noexcept']]],
+  ['memory',['Memory',['../class_n_r_e_1_1_memory_1_1_memory.php',1,'NRE::Memory']]],
+  ['memory',['Memory',['../namespace_memory.php',1,'Memory'],['../class_n_r_e_1_1_memory_1_1_memory.php#ac16541a849ddb56c20f7a86cceda80fb',1,'NRE::Memory::Memory::Memory()'],['../class_n_r_e_1_1_memory_1_1_memory_3_01void_01_4.php#a000e3731b80015dd6e9cf2c6c059dbb4',1,'NRE::Memory::Memory&lt; void &gt;::Memory()']]],
+  ['memory_3c_20void_20_3e',['Memory&lt; void &gt;',['../class_n_r_e_1_1_memory_1_1_memory_3_01void_01_4.php',1,'NRE::Memory']]],
+  ['memoryhelper',['MemoryHelper',['../class_n_r_e_1_1_memory_1_1_memory_helper.php',1,'NRE::Memory']]],
+  ['memoryhelper',['MemoryHelper',['../class_n_r_e_1_1_memory_1_1_memory_helper.php#aba2fc0b8ec9e9e8fed7db31bd3b6d25e',1,'NRE::Memory::MemoryHelper::MemoryHelper(void *d)'],['../class_n_r_e_1_1_memory_1_1_memory_helper.php#a8ef572dbda6051612de78c8d5ff33cad',1,'NRE::Memory::MemoryHelper::MemoryHelper(MemoryHelper &amp;&amp;m)']]],
+  ['memorymanager',['MemoryManager',['../class_n_r_e_1_1_memory_1_1_memory_manager.php',1,'NRE::Memory']]]
 ];

@@ -31,15 +31,15 @@
             template <class T>
             class DirectAllocator : public AllocatorTraits<DirectAllocator<T>> {
                 public:     // Traits
-                    /**< Inherited allocator traits */
+                    /** Inherited allocator traits */
                     using Traits = AllocatorTraits<DirectAllocator<T>>;
-                    /**< The allocated type */
+                    /** The allocated type */
                     using ValueType     = typename Traits::ValueType;
-                    /**< The pointer on allocated type */
+                    /** The pointer on allocated type */
                     using Pointer       = typename Traits::Pointer;
-                    /**< The pointer on constant allocated type */
+                    /** The pointer on constant allocated type */
                     using ConstPointer  = typename Traits::ConstPointer;
-                    /**< The allocator size type */
+                    /** The allocator size type */
                     using SizeType      = typename Traits::SizeType;
     
                 public:     // Methods

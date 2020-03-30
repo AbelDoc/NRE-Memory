@@ -85,6 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="functions.php"><span>All</span></a></li>
       <li><a href="functions_func.php"><span>Functions</span></a></li>
       <li><a href="functions_vars.php"><span>Variables</span></a></li>
+      <li><a href="functions_type.php"><span>Typedefs</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -92,13 +93,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_a"><span>a</span></a></li>
       <li><a href="#index_c"><span>c</span></a></li>
       <li><a href="#index_d"><span>d</span></a></li>
-      <li><a href="#index_e"><span>e</span></a></li>
       <li><a href="#index_f"><span>f</span></a></li>
       <li><a href="#index_g"><span>g</span></a></li>
       <li><a href="#index_m"><span>m</span></a></li>
       <li><a href="#index_o"><span>o</span></a></li>
+      <li><a href="#index_p"><span>p</span></a></li>
       <li><a href="#index_r"><span>r</span></a></li>
       <li><a href="#index_s"><span>s</span></a></li>
+      <li><a href="#index_t"><span>t</span></a></li>
+      <li><a href="#index_v"><span>v</span></a></li>
       <li class="current"><a href="#index_0x7e"><span>~</span></a></li>
     </ul>
   </div>
@@ -122,19 +125,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
 <li>allocate()
-: <a class="el" href="class_n_r_e_1_1_memory_1_1_default_allocator.php#a7128011ad5ef6d499ca88a32a81c76d2">NRE::Memory::DefaultAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_direct_allocator.php#af164ce84938bbccd55bc40e84934b62e">NRE::Memory::DirectAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_i_allocator.php#af13b76e1e481d9ecbe1bda7b6ab080fa">NRE::Memory::IAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#ab8095072b53d13d3c20da79d73f58ae2">NRE::Memory::ManagerAllocator&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_allocator_traits_3_01_alloc_3_01_t_00_01_alloc_args_8_8_8_01_4_01_4.php#a9f01ece6d7a56473b2b378116c4b281a">NRE::Memory::AllocatorTraits&lt; Alloc&lt; T, AllocArgs... &gt; &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_default_allocator.php#a9b3cbddea4785bb6fb04d48b896f18e1">NRE::Memory::DefaultAllocator&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_direct_allocator.php#a3d392899c6e8f7575aa641fcd434e9e6">NRE::Memory::DirectAllocator&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#aee7599743acb3350f16e683e3695c40f">NRE::Memory::ManagerAllocator&lt; T &gt;</a>
+</li>
+<li>AllocatorType
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_allocator_traits_3_01_alloc_3_01_t_00_01_alloc_args_8_8_8_01_4_01_4.php#acbd51317e9cbd28f33205547b9e040be">NRE::Memory::AllocatorTraits&lt; Alloc&lt; T, AllocArgs... &gt; &gt;</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>ConstPointer
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_allocator_traits_3_01_alloc_3_01_t_00_01_alloc_args_8_8_8_01_4_01_4.php#a450a4a99715b80fe28e4c0c415a157d5">NRE::Memory::AllocatorTraits&lt; Alloc&lt; T, AllocArgs... &gt; &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_default_allocator.php#afbf052bb7b3e436082c766deb95e80a9">NRE::Memory::DefaultAllocator&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_direct_allocator.php#a89995f3d95caa637f6b3faa2ce3c5f18">NRE::Memory::DirectAllocator&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a638c27a97c0a518e68ad50d52edeecf6">NRE::Memory::ManagerAllocator&lt; T &gt;</a>
+</li>
 <li>construct()
-: <a class="el" href="class_n_r_e_1_1_memory_1_1_default_allocator.php#aacfc9d6880c15355f1ba8ab57535ecd0">NRE::Memory::DefaultAllocator&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_allocator_traits_3_01_alloc_3_01_t_00_01_alloc_args_8_8_8_01_4_01_4.php#a1a7cc004b9c731bb620a1ec261a0a277">NRE::Memory::AllocatorTraits&lt; Alloc&lt; T, AllocArgs... &gt; &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_default_allocator.php#aacfc9d6880c15355f1ba8ab57535ecd0">NRE::Memory::DefaultAllocator&lt; T &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_memory_1_1_direct_allocator.php#a844222c73953e74882ff52e6b6eebc42">NRE::Memory::DirectAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_i_allocator.php#a2ef035d639ca3994c4871f4131bfb9e2">NRE::Memory::IAllocator&lt; T &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#aef04e456ef2a827949953f5c57fabe5e">NRE::Memory::ManagerAllocator&lt; T &gt;</a>
 </li>
 </ul>
@@ -145,25 +157,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_n_r_e_1_1_memory_1_1_memory_helper.php#a931d45f5fa663a18b21f8f5c99e1c242">NRE::Memory::MemoryHelper</a>
 </li>
 <li>deallocate()
-: <a class="el" href="class_n_r_e_1_1_memory_1_1_default_allocator.php#ae3d6eee0e0216db63b387e1cd9d06f2b">NRE::Memory::DefaultAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_direct_allocator.php#aeec58465a06aec7f5c806be1d8f27b61">NRE::Memory::DirectAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_i_allocator.php#ad05fa4c8c1085707f4b912db2ca667d7">NRE::Memory::IAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a1fc4111ebf4c94289b8d4f82030d7c15">NRE::Memory::ManagerAllocator&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_allocator_traits_3_01_alloc_3_01_t_00_01_alloc_args_8_8_8_01_4_01_4.php#afa9d2cef262827294a84fac7e3cc7b40">NRE::Memory::AllocatorTraits&lt; Alloc&lt; T, AllocArgs... &gt; &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_default_allocator.php#a8cc22e61037fa1a5d1690638ab44bb65">NRE::Memory::DefaultAllocator&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_direct_allocator.php#a2a6b3cb156ede756d359561d3c478bcd">NRE::Memory::DirectAllocator&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#aa57d4310b6134d006b7803085a50aa75">NRE::Memory::ManagerAllocator&lt; T &gt;</a>
+</li>
+<li>DefaultAllocator()
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_default_allocator.php#adc2634bd4d47a2b862bb444732dceaeb">NRE::Memory::DefaultAllocator&lt; T &gt;</a>
 </li>
 <li>destroy()
-: <a class="el" href="class_n_r_e_1_1_memory_1_1_default_allocator.php#a93874628a47cd3975bef4c7ae56ba6d7">NRE::Memory::DefaultAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_direct_allocator.php#a021280fc327c81a9881e4d6c29acde5e">NRE::Memory::DirectAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_i_allocator.php#a8bde0f4fe8ca99fe9aede3081707f566">NRE::Memory::IAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a4ddee56a5270f2c5ea7d7af7ef43ef37">NRE::Memory::ManagerAllocator&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_allocator_traits_3_01_alloc_3_01_t_00_01_alloc_args_8_8_8_01_4_01_4.php#a9fde1294b99e6d45bea2638dfb0eb896">NRE::Memory::AllocatorTraits&lt; Alloc&lt; T, AllocArgs... &gt; &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_default_allocator.php#a8145d9f7fa7e362f6d85e6f2301f6a48">NRE::Memory::DefaultAllocator&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_direct_allocator.php#a0477d4f06aa77d3dac88abc9ad50d93b">NRE::Memory::DirectAllocator&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a2a04f835dc84a14445f1efa7e6091c3b">NRE::Memory::ManagerAllocator&lt; T &gt;</a>
 </li>
-</ul>
-
-
-<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
-<li>equal()
-: <a class="el" href="class_n_r_e_1_1_memory_1_1_default_allocator.php#ab1afb48bf0b832e84184aba39aea2385">NRE::Memory::DefaultAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_direct_allocator.php#ae962c2214146350e72864d7a66828072">NRE::Memory::DirectAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#af914d6e43b0d6056e777a008168f3cc7">NRE::Memory::ManagerAllocator&lt; T &gt;</a>
+<li>DirectAllocator()
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_direct_allocator.php#a47b5ee870021c8404c78c8b6ce9b6c18">NRE::Memory::DirectAllocator&lt; T &gt;</a>
 </li>
 </ul>
 
@@ -179,24 +188,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
 <li>getAddress()
-: <a class="el" href="class_n_r_e_1_1_memory_1_1_default_allocator.php#a48e1c8ca549bdf4297b4625dfa098fac">NRE::Memory::DefaultAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_direct_allocator.php#a0a3aaf395eeb5caaad2f3ae3c5580611">NRE::Memory::DirectAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_i_allocator.php#a546ef27c17d2c2a034abd989526f9770">NRE::Memory::IAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a4ff3bca65630fb09bd8b48e3a5059ba5">NRE::Memory::ManagerAllocator&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_allocator_traits_3_01_alloc_3_01_t_00_01_alloc_args_8_8_8_01_4_01_4.php#a206d2739b7cb99d27af15b226d2eeb71">NRE::Memory::AllocatorTraits&lt; Alloc&lt; T, AllocArgs... &gt; &gt;</a>
 </li>
 <li>getData()
 : <a class="el" href="class_n_r_e_1_1_memory_1_1_memory_helper.php#a48a9ae66560f9c35941d5bcf47a128e5">NRE::Memory::MemoryHelper</a>
 </li>
 <li>getMaxSize()
-: <a class="el" href="class_n_r_e_1_1_memory_1_1_default_allocator.php#a5d2071b8181bf81257d4a5bd5994b001">NRE::Memory::DefaultAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_direct_allocator.php#ac8014229d6a6492e1968a025353b89b3">NRE::Memory::DirectAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_i_allocator.php#ae1f04ef5ff7a1504f30c433fa6106916">NRE::Memory::IAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a3917736f2868992e5a93951224b688f6">NRE::Memory::ManagerAllocator&lt; T &gt;</a>
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_allocator_traits_3_01_alloc_3_01_t_00_01_alloc_args_8_8_8_01_4_01_4.php#a6781b6da52549beb2df1a91013a377bf">NRE::Memory::AllocatorTraits&lt; Alloc&lt; T, AllocArgs... &gt; &gt;</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>ManagerAllocator()
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#ac48608f8fb4cc048df2b65e10a050156">NRE::Memory::ManagerAllocator&lt; T &gt;</a>
+</li>
 <li>Memory()
 : <a class="el" href="class_n_r_e_1_1_memory_1_1_memory.php#ac16541a849ddb56c20f7a86cceda80fb">NRE::Memory::Memory&lt; T &gt;</a>
 , <a class="el" href="class_n_r_e_1_1_memory_1_1_memory_3_01void_01_4.php#a000e3731b80015dd6e9cf2c6c059dbb4">NRE::Memory::Memory&lt; void &gt;</a>
@@ -208,25 +214,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
-<li>operator!=()
-: <a class="el" href="class_n_r_e_1_1_memory_1_1_default_allocator.php#a7b8c5e96992902982e90bfa006a23e52">NRE::Memory::DefaultAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_direct_allocator.php#a727537922d07b8d6f2434593c361de3a">NRE::Memory::DirectAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_i_allocator.php#ac27e2268a23a2feb285bb956cc267a1f">NRE::Memory::IAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#abd34092db03d68400985d64e24337386">NRE::Memory::ManagerAllocator&lt; T &gt;</a>
-</li>
 <li>operator=()
 : <a class="el" href="class_n_r_e_1_1_memory_1_1_memory_helper.php#a1c2995adac2cf17a711975b50daeb3d0">NRE::Memory::MemoryHelper</a>
 </li>
-<li>operator==()
-: <a class="el" href="class_n_r_e_1_1_memory_1_1_default_allocator.php#aed4e9d9699f151163b47b55f8f26d300">NRE::Memory::DefaultAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_direct_allocator.php#a90465dfca3f08f978514dc76c2cdf27b">NRE::Memory::DirectAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_i_allocator.php#a096981a3600ebc03140c9345482acb04">NRE::Memory::IAllocator&lt; T &gt;</a>
-, <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#aa344b1b80f5c2490de56f3098e29739c">NRE::Memory::ManagerAllocator&lt; T &gt;</a>
+</ul>
+
+
+<h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>Pointer
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_allocator_traits_3_01_alloc_3_01_t_00_01_alloc_args_8_8_8_01_4_01_4.php#a7f73cde9c99e2ab816fe69e2600681e4">NRE::Memory::AllocatorTraits&lt; Alloc&lt; T, AllocArgs... &gt; &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_default_allocator.php#a55cdfb77ac670c7f0f354c4520e1d75f">NRE::Memory::DefaultAllocator&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_direct_allocator.php#ab5e4ec6ee58824de69f1609a401bd334">NRE::Memory::DirectAllocator&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a0875acfb48d9a259150f01b5f082a7f2">NRE::Memory::ManagerAllocator&lt; T &gt;</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>Rebind
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_allocator_traits_3_01_alloc_3_01_t_00_01_alloc_args_8_8_8_01_4_01_4.php#a8f39fd287b898c991dafee6e9d43be12">NRE::Memory::AllocatorTraits&lt; Alloc&lt; T, AllocArgs... &gt; &gt;</a>
+</li>
+<li>remove()
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php#a106b7a020213d42ae655b1f683332538">NRE::Memory::MemoryManager</a>
+</li>
 <li>removeMemory()
 : <a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php#adb396c53f7b64f8b92880463dc56d6a5">NRE::Memory::MemoryManager</a>
 </li>
@@ -234,8 +244,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>SizeType
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_allocator_traits_3_01_alloc_3_01_t_00_01_alloc_args_8_8_8_01_4_01_4.php#a7f223d5595247900e62f2ee05de7f7d0">NRE::Memory::AllocatorTraits&lt; Alloc&lt; T, AllocArgs... &gt; &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_default_allocator.php#ac1e05995ba31cba1bb617dfe66ad1039">NRE::Memory::DefaultAllocator&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_direct_allocator.php#a968f902a7ddf1695473261b9708456af">NRE::Memory::DirectAllocator&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a9a0a3bd9c58d160d630e3f6f601b6a02">NRE::Memory::ManagerAllocator&lt; T &gt;</a>
+</li>
+<li>store()
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php#a78ea393083fcc8f85e2160f830c1dd8d">NRE::Memory::MemoryManager</a>
+</li>
 <li>storeMemory()
 : <a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php#a88977c69bf179914fdf44ca29d420cfa">NRE::Memory::MemoryManager</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
+<li>Traits
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_default_allocator.php#a8371653e924ca448e5923a97989a450b">NRE::Memory::DefaultAllocator&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_direct_allocator.php#a595cbc869a214f4ccb067037d237c67a">NRE::Memory::DirectAllocator&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#ab048b421b2333b457602c64a84b785c6">NRE::Memory::ManagerAllocator&lt; T &gt;</a>
+</li>
+<li>Type
+: <a class="el" href="struct_n_r_e_1_1_memory_1_1_allocator_traits_3_01_alloc_3_01_t_00_01_alloc_args_8_8_8_01_4_01_4_1_1_rebinded.php#a87dafbbe405d07ecb9842fe057b16b0f">NRE::Memory::AllocatorTraits&lt; Alloc&lt; T, AllocArgs... &gt; &gt;::Rebinded&lt; K &gt;</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_v"></a>- v -</h3><ul>
+<li>ValueType
+: <a class="el" href="class_n_r_e_1_1_memory_1_1_allocator_traits_3_01_alloc_3_01_t_00_01_alloc_args_8_8_8_01_4_01_4.php#a78aa851f3a8dc304414e750f1f1f158e">NRE::Memory::AllocatorTraits&lt; Alloc&lt; T, AllocArgs... &gt; &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_default_allocator.php#a45284e27381356bba10f0199a83ae9d7">NRE::Memory::DefaultAllocator&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_direct_allocator.php#abde9e145ffb6349c7c251e32f2a79c1a">NRE::Memory::DirectAllocator&lt; T &gt;</a>
+, <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#ac755bea9a5560520c1365efd917f694b">NRE::Memory::ManagerAllocator&lt; T &gt;</a>
 </li>
 </ul>
 

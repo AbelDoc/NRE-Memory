@@ -100,25 +100,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Class Index</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="qindex"><a class="qindex" href="#letter_D">D</a>&#160;|&#160;<a class="qindex" href="#letter_I">I</a>&#160;|&#160;<a class="qindex" href="#letter_M">M</a></div>
+<div class="qindex"><a class="qindex" href="#letter_A">A</a>&#160;|&#160;<a class="qindex" href="#letter_D">D</a>&#160;|&#160;<a class="qindex" href="#letter_I">I</a>&#160;|&#160;<a class="qindex" href="#letter_M">M</a>&#160;|&#160;<a class="qindex" href="#letter_R">R</a></div>
 <table class="classindex">
-<tr><td rowspan="2" valign="bottom"><a name="letter_D"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;D&#160;&#160;</div></td></tr></table>
-</td><td valign="top"><a class="el" href="class_n_r_e_1_1_memory_1_1_memory.php">Memory</a> (NRE::Memory)&#160;&#160;&#160;</td></tr>
-<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_memory_1_1_memory_3_01void_01_4.php">Memory&lt; void &gt;</a> (NRE::Memory)&#160;&#160;&#160;</td></tr>
-<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_memory_1_1_default_allocator.php">DefaultAllocator</a> (NRE::Memory)&#160;&#160;&#160;</td><td valign="top"><a class="el" href="class_n_r_e_1_1_memory_1_1_memory_helper.php">MemoryHelper</a> (NRE::Memory)&#160;&#160;&#160;</td></tr>
-<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_memory_1_1_direct_allocator.php">DirectAllocator</a> (NRE::Memory)&#160;&#160;&#160;</td><td valign="top"><a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php">MemoryManager</a> (NRE::Memory)&#160;&#160;&#160;</td></tr>
-<tr><td rowspan="2" valign="bottom"><a name="letter_I"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;I&#160;&#160;</div></td></tr></table>
-</td><td rowspan="2" valign="bottom"><a name="letter_i"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;i&#160;&#160;</div></td></tr></table>
+<tr><td rowspan="2" valign="bottom"><a name="letter_A"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;A&#160;&#160;</div></td></tr></table>
+</td><td rowspan="2" valign="bottom"><a name="letter_M"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;M&#160;&#160;</div></td></tr></table>
 </td></tr>
 <tr></tr>
-<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_memory_1_1_i_allocator.php">IAllocator</a> (NRE::Memory)&#160;&#160;&#160;</td><td valign="top"><a class="el" href="struct_n_r_e_1_1_memory_1_1_default_allocator_1_1is_same.php">DefaultAllocator::isSame</a> (NRE::Memory)&#160;&#160;&#160;</td></tr>
-<tr><td rowspan="2" valign="bottom"><a name="letter_M"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;M&#160;&#160;</div></td></tr></table>
-</td><td valign="top"><a class="el" href="struct_n_r_e_1_1_memory_1_1_manager_allocator_1_1is_same.php">ManagerAllocator::isSame</a> (NRE::Memory)&#160;&#160;&#160;</td></tr>
-<tr><td valign="top"><a class="el" href="struct_n_r_e_1_1_memory_1_1_direct_allocator_1_1is_same.php">DirectAllocator::isSame</a> (NRE::Memory)&#160;&#160;&#160;</td></tr>
-<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">ManagerAllocator</a> (NRE::Memory)&#160;&#160;&#160;</td><td valign="top"><a class="el" href="struct_n_r_e_1_1_memory_1_1_default_allocator_1_1is_same_3_01_default_allocator_3_01_k_01_4_01_4.php">DefaultAllocator::isSame&lt; DefaultAllocator&lt; K &gt; &gt;</a> (NRE::Memory)&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_memory_1_1_allocator_traits.php">AllocatorTraits</a> (NRE::Memory)&#160;&#160;&#160;</td><td valign="top"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">ManagerAllocator</a> (NRE::Memory)&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_memory_1_1_allocator_traits_3_01_alloc_3_01_t_00_01_alloc_args_8_8_8_01_4_01_4.php">AllocatorTraits&lt; Alloc&lt; T, AllocArgs... &gt; &gt;</a> (NRE::Memory)&#160;&#160;&#160;</td><td valign="top"><a class="el" href="class_n_r_e_1_1_memory_1_1_memory.php">Memory</a> (NRE::Memory)&#160;&#160;&#160;</td></tr>
+<tr><td rowspan="2" valign="bottom"><a name="letter_D"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;D&#160;&#160;</div></td></tr></table>
+</td><td valign="top"><a class="el" href="class_n_r_e_1_1_memory_1_1_memory_3_01void_01_4.php">Memory&lt; void &gt;</a> (NRE::Memory)&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_memory_1_1_memory_helper.php">MemoryHelper</a> (NRE::Memory)&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_memory_1_1_default_allocator.php">DefaultAllocator</a> (NRE::Memory)&#160;&#160;&#160;</td><td valign="top"><a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php">MemoryManager</a> (NRE::Memory)&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="class_n_r_e_1_1_memory_1_1_direct_allocator.php">DirectAllocator</a> (NRE::Memory)&#160;&#160;&#160;</td><td rowspan="2" valign="bottom"><a name="letter_R"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;R&#160;&#160;</div></td></tr></table>
+</td></tr>
+<tr><td rowspan="2" valign="bottom"><a name="letter_I"></a><table border="0" cellspacing="0" cellpadding="0"><tr><td><div class="ah">&#160;&#160;I&#160;&#160;</div></td></tr></table>
+</td></tr>
+<tr><td valign="top"><a class="el" href="struct_n_r_e_1_1_memory_1_1_allocator_traits_3_01_alloc_3_01_t_00_01_alloc_args_8_8_8_01_4_01_4_1_1_rebinded.php">AllocatorTraits&lt; Alloc&lt; T, AllocArgs... &gt; &gt;::Rebinded</a> (NRE::Memory)&#160;&#160;&#160;</td></tr>
+<tr><td valign="top"><a class="el" href="struct_n_r_e_1_1_memory_1_1_is_allocator.php">IsAllocator</a> (NRE::Memory)&#160;&#160;&#160;</td><td></td></tr>
 <tr><td></td><td></td></tr>
 </table>
-<div class="qindex"><a class="qindex" href="#letter_D">D</a>&#160;|&#160;<a class="qindex" href="#letter_I">I</a>&#160;|&#160;<a class="qindex" href="#letter_M">M</a></div>
+<div class="qindex"><a class="qindex" href="#letter_A">A</a>&#160;|&#160;<a class="qindex" href="#letter_D">D</a>&#160;|&#160;<a class="qindex" href="#letter_I">I</a>&#160;|&#160;<a class="qindex" href="#letter_M">M</a>&#160;|&#160;<a class="qindex" href="#letter_R">R</a></div>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

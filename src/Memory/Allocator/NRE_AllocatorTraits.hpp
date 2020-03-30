@@ -39,15 +39,15 @@
             template <template <class, class ...> class Alloc, class T, class ... AllocArgs>
             class AllocatorTraits<Alloc<T, AllocArgs...>> : public Utility::StaticInterface<AllocatorTraits<Alloc<T, AllocArgs...>>> {
                 public:     // Traits
-                    /**< The allocator type */
+                    /** The allocator type */
                     using AllocatorType = Alloc<T, AllocArgs...>;
-                    /**< The allocated type */
+                    /** The allocated type */
                     using ValueType     = T;
-                    /**< The pointer on allocated type */
+                    /** The pointer on allocated type */
                     using Pointer       = T*;
-                    /**< The pointer on constant allocated type */
+                    /** The pointer on constant allocated type */
                     using ConstPointer  = const T*;
-                    /**< The allocator size type */
+                    /** The allocator size type */
                     using SizeType      = std::size_t;
                     
                     /**
@@ -56,10 +56,11 @@
                      */
                     template <class K>
                     struct Rebinded {
+                        /** The rebinded allocator type */
                         using Type = Alloc<K, AllocArgs...>;
                     };
     
-                    /**< The rebinded allocator type */
+                    /** The rebinded allocator type */
                     template <class K>
                     using Rebind = typename Rebinded<K>::Type;
                     
@@ -141,7 +142,7 @@
             struct IsAllocator : std::is_base_of<AllocatorTraits<T>, T> {
             };
     
-            /**< Shortcut to check if a template is an allocator */
+            /** Shortcut to check if a template is an allocator */
             template <class T>
             constexpr bool IsAllocatorV = IsAllocator<T>::value;
         }

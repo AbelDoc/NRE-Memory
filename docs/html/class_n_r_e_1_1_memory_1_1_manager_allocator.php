@@ -101,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_n_r_e_1_1_memory_1_1_manager_allocator-members.php">List of all members</a>  </div>
   <div class="headertitle">
@@ -119,99 +119,200 @@ Inheritance diagram for NRE::Memory::ManagerAllocator&lt; T &gt;:</div>
  <div class="center">
   <img src="class_n_r_e_1_1_memory_1_1_manager_allocator.png" usemap="#NRE::Memory::ManagerAllocator_3C_20T_20_3E_map" alt=""/>
   <map id="NRE::Memory::ManagerAllocator_3C_20T_20_3E_map" name="NRE::Memory::ManagerAllocator&lt; T &gt;_map">
-<area href="class_n_r_e_1_1_memory_1_1_i_allocator.php" alt="NRE::Memory::IAllocator&lt; ManagerAllocator&lt; T &gt; &gt;" shape="rect" coords="0,56,349,80"/>
+<area href="class_n_r_e_1_1_memory_1_1_allocator_traits.php" alt="NRE::Memory::AllocatorTraits&lt; ManagerAllocator&lt; T &gt; &gt;" shape="rect" coords="0,0,334,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_n_r_e_1_1_memory_1_1_manager_allocator_1_1is_same.php">isSame</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_n_r_e_1_1_memory_1_1_manager_allocator_1_1is_same_3_01_manager_allocator_3_01_k_01_4_01_4.php">isSame&lt; ManagerAllocator&lt; K &gt; &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ab048b421b2333b457602c64a84b785c6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#ab048b421b2333b457602c64a84b785c6">Traits</a> = <a class="el" href="class_n_r_e_1_1_memory_1_1_allocator_traits.php">AllocatorTraits</a>&lt; <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">ManagerAllocator</a>&lt; T &gt;&gt;</td></tr>
+<tr class="separator:ab048b421b2333b457602c64a84b785c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac755bea9a5560520c1365efd917f694b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#ac755bea9a5560520c1365efd917f694b">ValueType</a> = typename Traits::ValueType</td></tr>
+<tr class="separator:ac755bea9a5560520c1365efd917f694b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0875acfb48d9a259150f01b5f082a7f2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a0875acfb48d9a259150f01b5f082a7f2">Pointer</a> = typename Traits::Pointer</td></tr>
+<tr class="separator:a0875acfb48d9a259150f01b5f082a7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a638c27a97c0a518e68ad50d52edeecf6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a638c27a97c0a518e68ad50d52edeecf6">ConstPointer</a> = typename Traits::ConstPointer</td></tr>
+<tr class="separator:a638c27a97c0a518e68ad50d52edeecf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a0a3bd9c58d160d630e3f6f601b6a02"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a9a0a3bd9c58d160d630e3f6f601b6a02">SizeType</a> = typename Traits::SizeType</td></tr>
+<tr class="separator:a9a0a3bd9c58d160d630e3f6f601b6a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3917736f2868992e5a93951224b688f6"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a3917736f2868992e5a93951224b688f6">getMaxSize</a> () const </td></tr>
-<tr class="separator:a3917736f2868992e5a93951224b688f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0314e7bc798f2f5f9e03688c79893f53"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a0314e7bc798f2f5f9e03688c79893f53">getAddress</a> (T &amp;object) const </td></tr>
-<tr class="separator:a0314e7bc798f2f5f9e03688c79893f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ff3bca65630fb09bd8b48e3a5059ba5"><td class="memItemLeft" align="right" valign="top">const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a4ff3bca65630fb09bd8b48e3a5059ba5">getAddress</a> (T const &amp;object) const </td></tr>
-<tr class="separator:a4ff3bca65630fb09bd8b48e3a5059ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8095072b53d13d3c20da79d73f58ae2"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#ab8095072b53d13d3c20da79d73f58ae2">allocate</a> (std::size_t n)</td></tr>
-<tr class="separator:ab8095072b53d13d3c20da79d73f58ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fc4111ebf4c94289b8d4f82030d7c15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a1fc4111ebf4c94289b8d4f82030d7c15">deallocate</a> (T *&amp;p)</td></tr>
-<tr class="separator:a1fc4111ebf4c94289b8d4f82030d7c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae34c887d9f641cc7efa37b8a68914140"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#ae34c887d9f641cc7efa37b8a68914140">deallocate</a> (T *&amp;p, std::size_t n)</td></tr>
-<tr class="separator:ae34c887d9f641cc7efa37b8a68914140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac48608f8fb4cc048df2b65e10a050156"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#ac48608f8fb4cc048df2b65e10a050156">ManagerAllocator</a> () noexcept=default</td></tr>
+<tr class="separator:ac48608f8fb4cc048df2b65e10a050156"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93c13e6e825015c95fa9d8857dbb9011"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a93c13e6e825015c95fa9d8857dbb9011"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a93c13e6e825015c95fa9d8857dbb9011">ManagerAllocator</a> (<a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">ManagerAllocator</a>&lt; K &gt; const &amp;alloc) noexcept</td></tr>
+<tr class="separator:a93c13e6e825015c95fa9d8857dbb9011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee7599743acb3350f16e683e3695c40f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a0875acfb48d9a259150f01b5f082a7f2">Pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#aee7599743acb3350f16e683e3695c40f">allocate</a> (<a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a9a0a3bd9c58d160d630e3f6f601b6a02">SizeType</a> n=1)</td></tr>
+<tr class="separator:aee7599743acb3350f16e683e3695c40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa57d4310b6134d006b7803085a50aa75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#aa57d4310b6134d006b7803085a50aa75">deallocate</a> (<a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a0875acfb48d9a259150f01b5f082a7f2">Pointer</a> p)</td></tr>
+<tr class="separator:aa57d4310b6134d006b7803085a50aa75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a255cfd3d195e1e02e883e37a6c292"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#af5a255cfd3d195e1e02e883e37a6c292">deallocate</a> (<a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a0875acfb48d9a259150f01b5f082a7f2">Pointer</a> p, <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a9a0a3bd9c58d160d630e3f6f601b6a02">SizeType</a> n)</td></tr>
+<tr class="separator:af5a255cfd3d195e1e02e883e37a6c292"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef04e456ef2a827949953f5c57fabe5e"><td class="memTemplParams" colspan="2">template&lt;class K , class... Args&gt; </td></tr>
 <tr class="memitem:aef04e456ef2a827949953f5c57fabe5e"><td class="memTemplItemLeft" align="right" valign="top">K *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#aef04e456ef2a827949953f5c57fabe5e">construct</a> (K *p, Args &amp;&amp;...args)</td></tr>
 <tr class="separator:aef04e456ef2a827949953f5c57fabe5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ddee56a5270f2c5ea7d7af7ef43ef37"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:a4ddee56a5270f2c5ea7d7af7ef43ef37"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a4ddee56a5270f2c5ea7d7af7ef43ef37">destroy</a> (K *p)</td></tr>
-<tr class="separator:a4ddee56a5270f2c5ea7d7af7ef43ef37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af914d6e43b0d6056e777a008168f3cc7"><td class="memTemplParams" colspan="2">template&lt;class K , typename std::enable_if&lt; ManagerAllocator&lt; T &gt;::isSame&lt; K &gt;::value, int &gt;::type  = 0&gt; </td></tr>
-<tr class="memitem:af914d6e43b0d6056e777a008168f3cc7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#af914d6e43b0d6056e777a008168f3cc7">equal</a> (K const &amp;o) const </td></tr>
-<tr class="separator:af914d6e43b0d6056e777a008168f3cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af914d6e43b0d6056e777a008168f3cc7"><td class="memTemplParams" colspan="2">template&lt;class K , typename std::enable_if&lt;!ManagerAllocator&lt; T &gt;::isSame&lt; K &gt;::value, int &gt;::type  = 0&gt; </td></tr>
-<tr class="memitem:af914d6e43b0d6056e777a008168f3cc7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#af914d6e43b0d6056e777a008168f3cc7">equal</a> (K const &amp;o) const </td></tr>
-<tr class="separator:af914d6e43b0d6056e777a008168f3cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa344b1b80f5c2490de56f3098e29739c"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:aa344b1b80f5c2490de56f3098e29739c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#aa344b1b80f5c2490de56f3098e29739c">operator==</a> (<a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">ManagerAllocator</a>&lt; K &gt; const &amp;o) const </td></tr>
-<tr class="separator:aa344b1b80f5c2490de56f3098e29739c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd34092db03d68400985d64e24337386"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
-<tr class="memitem:abd34092db03d68400985d64e24337386"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#abd34092db03d68400985d64e24337386">operator!=</a> (<a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">ManagerAllocator</a>&lt; K &gt; const &amp;o) const </td></tr>
-<tr class="separator:abd34092db03d68400985d64e24337386"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class_n_r_e_1_1_memory_1_1_i_allocator"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_n_r_e_1_1_memory_1_1_i_allocator')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_n_r_e_1_1_memory_1_1_i_allocator.php">NRE::Memory::IAllocator&lt; ManagerAllocator&lt; T &gt; &gt;</a></td></tr>
-<tr class="memitem:ae1f04ef5ff7a1504f30c433fa6106916 inherit pub_methods_class_n_r_e_1_1_memory_1_1_i_allocator"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_i_allocator.php#ae1f04ef5ff7a1504f30c433fa6106916">getMaxSize</a> () const</td></tr>
-<tr class="separator:ae1f04ef5ff7a1504f30c433fa6106916 inherit pub_methods_class_n_r_e_1_1_memory_1_1_i_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a546ef27c17d2c2a034abd989526f9770 inherit pub_methods_class_n_r_e_1_1_memory_1_1_i_allocator"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">ManagerAllocator</a>&lt; T &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_i_allocator.php#a546ef27c17d2c2a034abd989526f9770">getAddress</a> (<a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">ManagerAllocator</a>&lt; T &gt; &amp;object) const</td></tr>
-<tr class="separator:a546ef27c17d2c2a034abd989526f9770 inherit pub_methods_class_n_r_e_1_1_memory_1_1_i_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f32641335996c8311f26817c0816b12 inherit pub_methods_class_n_r_e_1_1_memory_1_1_i_allocator"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">ManagerAllocator</a>&lt; T &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_i_allocator.php#a8f32641335996c8311f26817c0816b12">getAddress</a> (<a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">ManagerAllocator</a>&lt; T &gt;const &amp;object) const</td></tr>
-<tr class="separator:a8f32641335996c8311f26817c0816b12 inherit pub_methods_class_n_r_e_1_1_memory_1_1_i_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af13b76e1e481d9ecbe1bda7b6ab080fa inherit pub_methods_class_n_r_e_1_1_memory_1_1_i_allocator"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">ManagerAllocator</a>&lt; T &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_i_allocator.php#af13b76e1e481d9ecbe1bda7b6ab080fa">allocate</a> (std::size_t n)</td></tr>
-<tr class="separator:af13b76e1e481d9ecbe1bda7b6ab080fa inherit pub_methods_class_n_r_e_1_1_memory_1_1_i_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad05fa4c8c1085707f4b912db2ca667d7 inherit pub_methods_class_n_r_e_1_1_memory_1_1_i_allocator"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_i_allocator.php#ad05fa4c8c1085707f4b912db2ca667d7">deallocate</a> (<a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">ManagerAllocator</a>&lt; T &gt; *&amp;p)</td></tr>
-<tr class="separator:ad05fa4c8c1085707f4b912db2ca667d7 inherit pub_methods_class_n_r_e_1_1_memory_1_1_i_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4748b052104daed4a44aa2f5ced23b3 inherit pub_methods_class_n_r_e_1_1_memory_1_1_i_allocator"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_i_allocator.php#ad4748b052104daed4a44aa2f5ced23b3">deallocate</a> (<a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">ManagerAllocator</a>&lt; T &gt; *&amp;p, std::size_t n)</td></tr>
-<tr class="separator:ad4748b052104daed4a44aa2f5ced23b3 inherit pub_methods_class_n_r_e_1_1_memory_1_1_i_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ef035d639ca3994c4871f4131bfb9e2 inherit pub_methods_class_n_r_e_1_1_memory_1_1_i_allocator"><td class="memItemLeft" align="right" valign="top">K *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_i_allocator.php#a2ef035d639ca3994c4871f4131bfb9e2">construct</a> (K *p, Args &amp;&amp;...args)</td></tr>
-<tr class="separator:a2ef035d639ca3994c4871f4131bfb9e2 inherit pub_methods_class_n_r_e_1_1_memory_1_1_i_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bde0f4fe8ca99fe9aede3081707f566 inherit pub_methods_class_n_r_e_1_1_memory_1_1_i_allocator"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_i_allocator.php#a8bde0f4fe8ca99fe9aede3081707f566">destroy</a> (K *p)</td></tr>
-<tr class="separator:a8bde0f4fe8ca99fe9aede3081707f566 inherit pub_methods_class_n_r_e_1_1_memory_1_1_i_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a096981a3600ebc03140c9345482acb04 inherit pub_methods_class_n_r_e_1_1_memory_1_1_i_allocator"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_i_allocator.php#a096981a3600ebc03140c9345482acb04">operator==</a> (<a class="el" href="class_n_r_e_1_1_memory_1_1_i_allocator.php">IAllocator</a>&lt; K &gt; const &amp;o) const</td></tr>
-<tr class="separator:a096981a3600ebc03140c9345482acb04 inherit pub_methods_class_n_r_e_1_1_memory_1_1_i_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac27e2268a23a2feb285bb956cc267a1f inherit pub_methods_class_n_r_e_1_1_memory_1_1_i_allocator"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_i_allocator.php#ac27e2268a23a2feb285bb956cc267a1f">operator!=</a> (<a class="el" href="class_n_r_e_1_1_memory_1_1_i_allocator.php">IAllocator</a>&lt; K &gt; const &amp;o) const</td></tr>
-<tr class="separator:ac27e2268a23a2feb285bb956cc267a1f inherit pub_methods_class_n_r_e_1_1_memory_1_1_i_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a04f835dc84a14445f1efa7e6091c3b"><td class="memTemplParams" colspan="2">template&lt;class K &gt; </td></tr>
+<tr class="memitem:a2a04f835dc84a14445f1efa7e6091c3b"><td class="memTemplItemLeft" align="right" valign="top">K *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a2a04f835dc84a14445f1efa7e6091c3b">destroy</a> (K *p)</td></tr>
+<tr class="separator:a2a04f835dc84a14445f1efa7e6091c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class T&gt;<br />
 class NRE::Memory::ManagerAllocator&lt; T &gt;</h3>
 
 <p>A variant of DirectAlloctor but store every call in <a class="el" href="class_n_r_e_1_1_memory_1_1_memory_manager.php" title="Store current allocated memory and tell if any memory leak occurs. ">MemoryManager</a>. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ab8095072b53d13d3c20da79d73f58ae2"></a>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a638c27a97c0a518e68ad50d52edeecf6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T&gt; </div>
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">NRE::Memory::ManagerAllocator</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a638c27a97c0a518e68ad50d52edeecf6">ConstPointer</a> =  typename Traits::ConstPointer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The pointer on constant allocated type </p>
+
+</div>
+</div>
+<a class="anchor" id="a0875acfb48d9a259150f01b5f082a7f2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">NRE::Memory::ManagerAllocator</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a0875acfb48d9a259150f01b5f082a7f2">Pointer</a> =  typename Traits::Pointer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The pointer on allocated type </p>
+
+</div>
+</div>
+<a class="anchor" id="a9a0a3bd9c58d160d630e3f6f601b6a02"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">NRE::Memory::ManagerAllocator</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a9a0a3bd9c58d160d630e3f6f601b6a02">SizeType</a> =  typename Traits::SizeType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The allocator size type </p>
+
+</div>
+</div>
+<a class="anchor" id="ab048b421b2333b457602c64a84b785c6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">NRE::Memory::ManagerAllocator</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#ab048b421b2333b457602c64a84b785c6">Traits</a> =  <a class="el" href="class_n_r_e_1_1_memory_1_1_allocator_traits.php">AllocatorTraits</a>&lt;<a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">ManagerAllocator</a>&lt;T&gt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inherited allocator traits </p>
+
+</div>
+</div>
+<a class="anchor" id="ac755bea9a5560520c1365efd917f694b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">NRE::Memory::ManagerAllocator</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#ac755bea9a5560520c1365efd917f694b">ValueType</a> =  typename Traits::ValueType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The allocated type </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ac48608f8fb4cc048df2b65e10a050156"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T* <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">NRE::Memory::ManagerAllocator</a>&lt; T &gt;::allocate </td>
+          <td class="memname"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">NRE::Memory::ManagerAllocator</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">ManagerAllocator</a> </td>
           <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>n</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+<p>Default constructor </p>
+
+</div>
+</div>
+<a class="anchor" id="a93c13e6e825015c95fa9d8857dbb9011"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<div class="memtemplate">
+template&lt;class K &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">NRE::Memory::ManagerAllocator</a>&lt; T &gt;::<a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">ManagerAllocator</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">ManagerAllocator</a>&lt; K &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>alloc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Convert a K-type allocator into a T-type allocator </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alloc</td><td>the allocator to convert </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aee7599743acb3350f16e683e3695c40f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a0875acfb48d9a259150f01b5f082a7f2">Pointer</a> <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">NRE::Memory::ManagerAllocator</a>&lt; T &gt;::allocate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a9a0a3bd9c58d160d630e3f6f601b6a02">SizeType</a>&#160;</td>
+          <td class="paramname"><em>n</em> = <code>1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 <p>Allocate n * sizeof(T) bytes </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -227,12 +328,9 @@ template&lt;class T&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T&gt; </div>
+template&lt;class T &gt; </div>
 <div class="memtemplate">
 template&lt;class K , class... Args&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">K* <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">NRE::Memory::ManagerAllocator</a>&lt; T &gt;::construct </td>
@@ -252,11 +350,6 @@ template&lt;class K , class... Args&gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Construct a K-type object in the given pointer with given arguments </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -265,31 +358,24 @@ template&lt;class K , class... Args&gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>the input pointer </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a1fc4111ebf4c94289b8d4f82030d7c15"></a>
+<a class="anchor" id="aa57d4310b6134d006b7803085a50aa75"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">NRE::Memory::ManagerAllocator</a>&lt; T &gt;::deallocate </td>
           <td>(</td>
-          <td class="paramtype">T *&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a0875acfb48d9a259150f01b5f082a7f2">Pointer</a>&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Deallocate a pointer given by an allocate call </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -300,25 +386,22 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ae34c887d9f641cc7efa37b8a68914140"></a>
+<a class="anchor" id="af5a255cfd3d195e1e02e883e37a6c292"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">NRE::Memory::ManagerAllocator</a>&lt; T &gt;::deallocate </td>
           <td>(</td>
-          <td class="paramtype">T *&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a0875acfb48d9a259150f01b5f082a7f2">Pointer</a>&#160;</td>
           <td class="paramname"><em>p</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php#a9a0a3bd9c58d160d630e3f6f601b6a02">SizeType</a>&#160;</td>
           <td class="paramname"><em>n</em>&#160;</td>
         </tr>
         <tr>
@@ -327,11 +410,6 @@ template&lt;class T&gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Deallocate a pointer given by an allocate call </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -343,30 +421,22 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a4ddee56a5270f2c5ea7d7af7ef43ef37"></a>
+<a class="anchor" id="a2a04f835dc84a14445f1efa7e6091c3b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T&gt; </div>
+template&lt;class T &gt; </div>
 <div class="memtemplate">
 template&lt;class K &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">NRE::Memory::ManagerAllocator</a>&lt; T &gt;::destroy </td>
+          <td class="memname">K* <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">NRE::Memory::ManagerAllocator</a>&lt; T &gt;::destroy </td>
           <td>(</td>
           <td class="paramtype">K *&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Destroy an given to the given pointer </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -374,243 +444,12 @@ template&lt;class K &gt; </div>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a class="anchor" id="af914d6e43b0d6056e777a008168f3cc7"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-<div class="memtemplate">
-template&lt;class K , typename std::enable_if&lt; ManagerAllocator&lt; T &gt;::isSame&lt; K &gt;::value, int &gt;::type  = 0&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">NRE::Memory::ManagerAllocator</a>&lt; T &gt;::equal </td>
-          <td>(</td>
-          <td class="paramtype">K const &amp;&#160;</td>
-          <td class="paramname"><em>o</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Equality test between this and o </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">o</td><td>the other allocator to compare with this </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the test result </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="af914d6e43b0d6056e777a008168f3cc7"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-<div class="memtemplate">
-template&lt;class K , typename std::enable_if&lt;!ManagerAllocator&lt; T &gt;::isSame&lt; K &gt;::value, int &gt;::type  = 0&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">NRE::Memory::ManagerAllocator</a>&lt; T &gt;::equal </td>
-          <td>(</td>
-          <td class="paramtype">K const &amp;&#160;</td>
-          <td class="paramname"><em>o</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Equality test between this and o </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">o</td><td>the other allocator to compare with this </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the test result </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a0314e7bc798f2f5f9e03688c79893f53"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T* <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">NRE::Memory::ManagerAllocator</a>&lt; T &gt;::getAddress </td>
-          <td>(</td>
-          <td class="paramtype">T &amp;&#160;</td>
-          <td class="paramname"><em>object</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Retrieve the address of an object </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">object</td><td>the object to return his address </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the object's address </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a4ff3bca65630fb09bd8b48e3a5059ba5"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const T* <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">NRE::Memory::ManagerAllocator</a>&lt; T &gt;::getAddress </td>
-          <td>(</td>
-          <td class="paramtype">T const &amp;&#160;</td>
-          <td class="paramname"><em>object</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Retrieve the address of an object </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">object</td><td>the object to return his address </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the object's address </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a3917736f2868992e5a93951224b688f6"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::size_t <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">NRE::Memory::ManagerAllocator</a>&lt; T &gt;::getMaxSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>the maximum allocation size </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="abd34092db03d68400985d64e24337386"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-<div class="memtemplate">
-template&lt;class K &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">NRE::Memory::ManagerAllocator</a>&lt; T &gt;::operator!= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">ManagerAllocator</a>&lt; K &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>o</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Inequality test between this and o </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">o</td><td>the other allocator to compare with this </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the test result </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aa344b1b80f5c2490de56f3098e29739c"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-<div class="memtemplate">
-template&lt;class K &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">NRE::Memory::ManagerAllocator</a>&lt; T &gt;::operator== </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_n_r_e_1_1_memory_1_1_manager_allocator.php">ManagerAllocator</a>&lt; K &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>o</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Equality test between this and o </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">o</td><td>the other allocator to compare with this </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the test result </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the input pointer </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/mnt/c/Users/abell/Documents/GitHub/NRE-Memory/src/Memory/Allocator/<a class="el" href="_n_r_e___manager_allocator_8hpp_source.php">NRE_ManagerAllocator.hpp</a></li>
+<li>/mnt/c/Users/abell/Documents/GitHub/NRE-Memory/src/Memory/Allocator/Manager/<a class="el" href="_n_r_e___manager_allocator_8hpp_source.php">NRE_ManagerAllocator.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->

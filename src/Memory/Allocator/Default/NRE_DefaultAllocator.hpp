@@ -31,15 +31,15 @@
             template <class T>
             class DefaultAllocator : public AllocatorTraits<DefaultAllocator<T>> {
                 public:     // Traits
-                    /**< Inherited allocator traits */
+                    /** Inherited allocator traits */
                     using Traits = AllocatorTraits<DefaultAllocator<T>>;
-                    /**< The allocated type */
+                    /** The allocated type */
                     using ValueType     = typename Traits::ValueType;
-                    /**< The pointer on allocated type */
+                    /** The pointer on allocated type */
                     using Pointer       = typename Traits::Pointer;
-                    /**< The pointer on constant allocated type */
+                    /** The pointer on constant allocated type */
                     using ConstPointer  = typename Traits::ConstPointer;
-                    /**< The allocator size type */
+                    /** The allocator size type */
                     using SizeType      = typename Traits::SizeType;
                     
                 public:     // Methods
@@ -93,6 +93,7 @@
             };
             
             #ifndef NRE_USE_MEMORY_MANAGER
+                /** Hide Allocator real implementation */
                 template <class T>
                 using Allocator = DefaultAllocator<T>;
             #endif

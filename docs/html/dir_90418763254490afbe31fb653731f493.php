@@ -102,16 +102,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="subdirs"></a>
+Directories</h2></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
 Files</h2></td></tr>
 <tr class="memitem:_n_r_e___allocator_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_n_r_e___allocator_8hpp.php">NRE_Allocator.hpp</a> <a href="_n_r_e___allocator_8hpp_source.php">[code]</a></td></tr>
-<tr class="memdesc:_n_r_e___allocator_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of <a class="el" href="namespace_memory.php" title="Memory&#39;s API. ">Memory</a>'s API's Object : Allocator. <br /></td></tr>
+<tr class="memdesc:_n_r_e___allocator_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of <a class="el" href="namespace_memory.php" title="Memory&#39;s API. ">Memory</a>'s API's Object : ManagerAllocator. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:_n_r_e___direct_allocator_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_n_r_e___direct_allocator_8hpp.php">NRE_DirectAllocator.hpp</a> <a href="_n_r_e___direct_allocator_8hpp_source.php">[code]</a></td></tr>
-<tr class="memdesc:_n_r_e___direct_allocator_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of <a class="el" href="namespace_memory.php" title="Memory&#39;s API. ">Memory</a>'s API's Object : DirectAllocator. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:_n_r_e___i_allocator_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_n_r_e___i_allocator_8hpp.php">NRE_IAllocator.hpp</a> <a href="_n_r_e___i_allocator_8hpp_source.php">[code]</a></td></tr>
-<tr class="memdesc:_n_r_e___i_allocator_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of <a class="el" href="namespace_memory.php" title="Memory&#39;s API. ">Memory</a>'s API's Object : IAllocator. <br /></td></tr>
+<tr class="memitem:_n_r_e___allocator_traits_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_n_r_e___allocator_traits_8hpp.php">NRE_AllocatorTraits.hpp</a> <a href="_n_r_e___allocator_traits_8hpp_source.php">[code]</a></td></tr>
+<tr class="memdesc:_n_r_e___allocator_traits_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of <a class="el" href="namespace_memory.php" title="Memory&#39;s API. ">Memory</a>'s API's Interface : AllocatorTraits. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

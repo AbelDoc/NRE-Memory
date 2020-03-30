@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.8.11"/>
         <script type="text/javascript" src="../../js/jquery-2.1.1.min.js"></script>
-        <title>NRE-Memory: /mnt/c/Users/abell/Documents/GitHub/NRE-Memory/src/Memory/Allocator/NRE_DirectAllocator.hpp File Reference</title>
+        <title>NRE-Memory: /mnt/c/Users/abell/Documents/GitHub/NRE-Memory/src/Memory/Allocator/Direct/NRE_DirectAllocator.hpp File Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.php">src</a></li><li class="navelem"><a class="el" href="dir_223fe3ddb66d6cdaa34448ac551f01ae.php">Memory</a></li><li class="navelem"><a class="el" href="dir_90418763254490afbe31fb653731f493.php">Allocator</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.php">src</a></li><li class="navelem"><a class="el" href="dir_223fe3ddb66d6cdaa34448ac551f01ae.php">Memory</a></li><li class="navelem"><a class="el" href="dir_90418763254490afbe31fb653731f493.php">Allocator</a></li><li class="navelem"><a class="el" href="dir_3233b5d59763b36a583101b321422202.php">Direct</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -108,9 +108,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Declaration of <a class="el" href="namespace_memory.php" title="Memory&#39;s API. ">Memory</a>'s API's Object : DirectAllocator.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
-<code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
-<code>#include &quot;<a class="el" href="_n_r_e___i_allocator_8hpp_source.php">NRE_IAllocator.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_n_r_e___allocator_traits_8hpp_source.php">../NRE_AllocatorTraits.hpp</a>&quot;</code><br />
+<code>#include &quot;NRE_DirectAllocator.tpp&quot;</code><br />
 </div>
 <p><a href="_n_r_e___direct_allocator_8hpp_source.php">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -118,10 +118,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_r_e_1_1_memory_1_1_direct_allocator.php">NRE::Memory::DirectAllocator&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate memory using malloc and free directly.  <a href="class_n_r_e_1_1_memory_1_1_direct_allocator.php#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_n_r_e_1_1_memory_1_1_direct_allocator_1_1is_same.php">NRE::Memory::DirectAllocator&lt; T &gt;::isSame&lt; typename &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_n_r_e_1_1_memory_1_1_direct_allocator_1_1is_same_3_01_direct_allocator_3_01_k_01_4_01_4.php">NRE::Memory::DirectAllocator&lt; T &gt;::isSame&lt; DirectAllocator&lt; K &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>

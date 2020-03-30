@@ -9,7 +9,7 @@
     
     #pragma once
 
-#include <Utility/Interfaces/Uncopyable/NRE_Uncopyable.hpp>
+    #include <Utility/Interfaces/Uncopyable/NRE_Uncopyable.hpp>
     
     /**
      * @namespace NRE

@@ -102,23 +102,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Declaration of <a class="el" href="namespace_memory.php" title="Memory&#39;s API. ">Memory</a>'s API's Object : Allocator.  
+<p>Declaration of <a class="el" href="namespace_memory.php" title="Memory&#39;s API. ">Memory</a>'s API's Object : ManagerAllocator.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="_n_r_e___i_allocator_8hpp_source.php">NRE_IAllocator.hpp</a>&quot;</code><br />
-<code>#include &quot;NRE_DefaultAllocator.hpp&quot;</code><br />
-<code>#include &quot;<a class="el" href="_n_r_e___direct_allocator_8hpp_source.php">NRE_DirectAllocator.hpp</a>&quot;</code><br />
-<code>#include &quot;NRE_ManagerAllocator.hpp&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_n_r_e___allocator_traits_8hpp_source.php">NRE_AllocatorTraits.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_n_r_e___default_allocator_8hpp_source.php">Default/NRE_DefaultAllocator.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_n_r_e___direct_allocator_8hpp_source.php">Direct/NRE_DirectAllocator.hpp</a>&quot;</code><br />
+<code>#include &quot;Manager/NRE_ManagerAllocator.hpp&quot;</code><br />
 </div>
 <p><a href="_n_r_e___allocator_8hpp_source.php">Go to the source code of this file.</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Declaration of <a class="el" href="namespace_memory.php" title="Memory&#39;s API. ">Memory</a>'s API's Object : Allocator. </p>
-<p>Declaration of <a class="el" href="namespace_memory.php" title="Memory&#39;s API. ">Memory</a>'s API's Object : ManagerAllocator.</p>
-<p>Declaration of <a class="el" href="namespace_memory.php" title="Memory&#39;s API. ">Memory</a>'s API's Object : DefaultAllocator.</p>
+<div class="textblock"><p>Declaration of <a class="el" href="namespace_memory.php" title="Memory&#39;s API. ">Memory</a>'s API's Object : ManagerAllocator. </p>
+<p>Declaration of <a class="el" href="namespace_memory.php" title="Memory&#39;s API. ">Memory</a>'s API's Object : Allocator.</p>
 <dl class="section author"><dt>Author</dt><dd>Louis ABEL </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>21/03/2020 </dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>CC-BY-NC-SA</dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Louis ABEL </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>14/03/2020 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>CC-BY-NC-SA </dd></dl>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['operator_21_3d',['operator!=',['../class_n_r_e_1_1_memory_1_1_default_allocator.php#a7b8c5e96992902982e90bfa006a23e52',1,'NRE::Memory::DefaultAllocator::operator!=()'],['../class_n_r_e_1_1_memory_1_1_direct_allocator.php#a727537922d07b8d6f2434593c361de3a',1,'NRE::Memory::DirectAllocator::operator!=()'],['../class_n_r_e_1_1_memory_1_1_i_allocator.php#ac27e2268a23a2feb285bb956cc267a1f',1,'NRE::Memory::IAllocator::operator!=()'],['../class_n_r_e_1_1_memory_1_1_manager_allocator.php#abd34092db03d68400985d64e24337386',1,'NRE::Memory::ManagerAllocator::operator!=()']]],
-  ['operator_3d',['operator=',['../class_n_r_e_1_1_memory_1_1_memory_helper.php#a1c2995adac2cf17a711975b50daeb3d0',1,'NRE::Memory::MemoryHelper']]],
-  ['operator_3d_3d',['operator==',['../class_n_r_e_1_1_memory_1_1_default_allocator.php#aed4e9d9699f151163b47b55f8f26d300',1,'NRE::Memory::DefaultAllocator::operator==()'],['../class_n_r_e_1_1_memory_1_1_direct_allocator.php#a90465dfca3f08f978514dc76c2cdf27b',1,'NRE::Memory::DirectAllocator::operator==()'],['../class_n_r_e_1_1_memory_1_1_i_allocator.php#a096981a3600ebc03140c9345482acb04',1,'NRE::Memory::IAllocator::operator==()'],['../class_n_r_e_1_1_memory_1_1_manager_allocator.php#aa344b1b80f5c2490de56f3098e29739c',1,'NRE::Memory::ManagerAllocator::operator==()']]]
+  ['remove',['remove',['../class_n_r_e_1_1_memory_1_1_memory_manager.php#a106b7a020213d42ae655b1f683332538',1,'NRE::Memory::MemoryManager']]],
+  ['removememory',['removeMemory',['../class_n_r_e_1_1_memory_1_1_memory_manager.php#adb396c53f7b64f8b92880463dc56d6a5',1,'NRE::Memory::MemoryManager']]]
 ];

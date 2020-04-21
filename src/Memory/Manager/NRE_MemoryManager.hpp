@@ -99,7 +99,7 @@
                      */
                     template <class T>
                     static void store(T* data) {
-                        memoryManager.storeMemory(data);
+                        _memoryManager.storeMemory(data);
                     }
                     /**
                      * Remove a memory pointer
@@ -107,7 +107,7 @@
                      */
                     template <class T>
                     static void remove(T* data) {
-                        memoryManager.removeMemory(data);
+                        _memoryManager.removeMemory(data);
                     }
             };
             

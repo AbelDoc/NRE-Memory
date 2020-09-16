@@ -7,8 +7,6 @@
      * @copyright CC-BY-NC-SA
      */
      
-    #define NRE_USE_MEMORY_MANAGER
-
     #include "Header/NRE_Memory.hpp"
 
     using namespace NRE::Memory;

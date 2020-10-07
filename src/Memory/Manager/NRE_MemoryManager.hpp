@@ -10,8 +10,8 @@
     #pragma once
     
     #include <algorithm>
-    #include <Utility/Singleton/NRE_Singleton.hpp>
-    #include <Utility/Detail/Vector/NRE_Vector.hpp>
+    #include <Core/Singleton/NRE_Singleton.hpp>
+    #include <Core/Detail/Vector/NRE_Vector.hpp>
     #include "../Allocator/Direct/NRE_DirectAllocator.hpp"
 
     #include "Data/NRE_Memory.hpp"
@@ -33,7 +33,7 @@
              */
             class MemoryManager {
                 private:    // Fields
-                    Utility::Detail::Vector<MemoryHelper*, DirectAllocator<MemoryHelper*>> allocated;   /**< Store all allocated pointer */
+                    Core::Detail::Vector<MemoryHelper*, DirectAllocator<MemoryHelper*>> allocated;   /**< Store all allocated pointer */
         
                 public :    // Methods
                     //## Methods ##//

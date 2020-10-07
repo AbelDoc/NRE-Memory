@@ -9,7 +9,7 @@
     
     #pragma once
 
-    #include <Utility/Interfaces/Uncopyable/NRE_Uncopyable.hpp>
+    #include <Core/Interfaces/Uncopyable/NRE_Uncopyable.hpp>
     
     /**
      * @namespace NRE
@@ -26,7 +26,7 @@
              * @class MemoryHelper
              * @brief Store a memory pointer, need to be used from derived class
              */
-            class MemoryHelper : public Utility::Uncopyable<MemoryHelper> {
+            class MemoryHelper : public Core::Uncopyable<MemoryHelper> {
                 protected : // Fields
                     void* data; /**< The stored pointer */
                 

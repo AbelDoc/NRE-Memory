@@ -12,7 +12,7 @@
     #include <limits>
     #include <type_traits>
     #include <utility>
-    #include "Utility/Interfaces/NRE_StaticInterface.hpp"
+    #include "Core/Interfaces/NRE_StaticInterface.hpp"
     
     /**
      * @namespace NRE
@@ -37,7 +37,7 @@
              * @brief Describe an allocator object
              */
             template <template <class, class ...> class Alloc, class T, class ... AllocArgs>
-            class AllocatorTraits<Alloc<T, AllocArgs...>> : public Utility::StaticInterface<AllocatorTraits<Alloc<T, AllocArgs...>>> {
+            class AllocatorTraits<Alloc<T, AllocArgs...>> : public Core::StaticInterface<AllocatorTraits<Alloc<T, AllocArgs...>>> {
                 public:     // Traits
                     /** The allocator type */
                     using AllocatorType = Alloc<T, AllocArgs...>;

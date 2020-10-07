@@ -10,7 +10,7 @@
     #include "Header/NRE_Memory.hpp"
 
     using namespace NRE::Memory;
-    using namespace NRE::Utility;
+    using namespace NRE::Core;
     
     int main(int, char**) {
         Allocator<int> a;
